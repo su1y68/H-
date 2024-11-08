@@ -270,13 +270,6 @@ end)
 end
 })
 
-player:AddButton({
-	Name = "🚀飞行",
-	Callback = function()
-      	loadstring(game:HttpGet("https://pastebin.com/raw/U27yQRxS"))()
-end
-})
-
 local Tab = Window:MakeTab({
   Name = "光影脚本",
   Icon = "rbxassetid://4483345998",
