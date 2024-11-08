@@ -101,6 +101,69 @@ local Tab = Window:MakeTab({
   })
 about:AddParagraph("对不起 这里【通用1】暂时还没有做")
 about:AddParagraph("如果需要脚本 可以联系我")
+Tab:AddButton({
+	Name = "玩家加入与提示",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+
+end
+})
+about:Textbox("自定义范围!", "HitBox", "输入", function(Value)
+   _G.HeadSize = Value
+    _G.Disabled = true 
+   game:GetService('RunService').RenderStepped:connect(function()
+    if _G.Disabled then
+    for i,v in next, game:GetService('Players'):GetPlayers() do
+    if v.Name ~= game:GetService('Players').LocalPlayer.Name then 
+    pcall(function()
+    v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) 
+   v.Character.HumanoidRootPart.Transparency = 0.7 
+   v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
+    v.Character.HumanoidRootPart.Material = "Neon"
+    v.Character.HumanoidRootPart.CanCollide = false
+    end)
+    end 
+   end 
+   end
+    end)
+end)
+Tab:AddButton({
+	Name = "《死亡笔记》",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/%E6%AD%BB%E4%BA%A1%E7%AC%94%E8%AE%B0%20(1).txt"))()
+
+end
+})
+about:Toggle("夜视","Toggle",false,function(Value)
+if Value then
+
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+
+		else
+
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+
+		end
+end)
+about:Toggle("无限跳","Toggle",false,function(Value)
+        Jump = Value
+        game.UserInputService.JumpRequest:Connect(function()
+            if Jump then
+                game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+            end
+        end)
+    end)
+about:Slider("步行速度!", "WalkSpeed", game.Players.LocalPlayer.Character.Humanoid.WalkSpeed, 16, 400, false, function(Speed)
+  spawn(function() while task.wait() do game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Speed end end)
+end)
+about:Slider("跳跃高度!", "JumpPower", game.Players.LocalPlayer.Character.Humanoid.JumpPower, 50, 400, false, function(Jump)
+  spawn(function() while task.wait() do game.Players.LocalPlayer.Character.Humanoid.JumpPower = Jump end end)
+end)
+about:Button("超高画质",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+end)
 
 local Tab = Window:MakeTab({
   Name = "doors floor2",
@@ -166,6 +229,14 @@ Tab:AddButton({
 	Callback = function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/XK%20Ohio.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "❸",
+	Callback = function()
+
+loadstring(game:HttpGet("https://rentry.co/linohionb/raw"))()
 
 end
 })
