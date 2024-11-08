@@ -23,6 +23,8 @@ local about = Window:MakeTab({
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
+about:AddParagraph("以后每周六～日更新一次")
+about:AddParagraph("已制作一天")
 
 local Tab = Window:MakeTab({
   Name = "找脚本",
@@ -61,3 +63,26 @@ loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\
 
 end
 })
+
+local Tab = Window:MakeTab({
+  Name = "最强战场",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "LAT cy",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "通用1",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+about:AddParagraph("对不起 这里暂时还没有做")
+about:AddParagraph("如果需要脚本 可以联系我")
+————脚本先去【找脚本】里面有4个脚本 根据自己以往经验 选择相应服务器 即可爱咋玩咋玩
