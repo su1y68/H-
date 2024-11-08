@@ -85,4 +85,3 @@ local Tab = Window:MakeTab({
   })
 about:AddParagraph("对不起 这里暂时还没有做")
 about:AddParagraph("如果需要脚本 可以联系我")
-————脚本先去【找脚本】里面有4个脚本 根据自己以往经验 选择相应服务器 即可爱咋玩咋玩
