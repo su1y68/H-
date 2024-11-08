@@ -109,61 +109,84 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/m
 
 end
 })
-about:Textbox("自定义范围!", "HitBox", "输入", function(Value)
-   _G.HeadSize = Value
-    _G.Disabled = true 
-   game:GetService('RunService').RenderStepped:connect(function()
-    if _G.Disabled then
-    for i,v in next, game:GetService('Players'):GetPlayers() do
-    if v.Name ~= game:GetService('Players').LocalPlayer.Name then 
-    pcall(function()
-    v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) 
-   v.Character.HumanoidRootPart.Transparency = 0.7 
-   v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really red")
-    v.Character.HumanoidRootPart.Material = "Neon"
-    v.Character.HumanoidRootPart.CanCollide = false
-    end)
-    end 
-   end 
-   end
-    end)
-end)
+
+Tab:AddToggle({
+	Name = "夜视",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+		else
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+		end
+	end
+})
 Tab:AddButton({
-	Name = "《死亡笔记》",
+	Name = "改动作",
 	Callback = function()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/%E6%AD%BB%E4%BA%A1%E7%AC%94%E8%AE%B0%20(1).txt"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/Zj4NnKs6"))()
 
 end
 })
-about:Toggle("夜视","Toggle",false,function(Value)
-if Value then
+Tab:AddButton({
+	Name = "键盘",
+	Callback = function()
 
-		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 
-		else
+end
+})
+Tab:AddButton({
+	Name = "踏空行走",
+	Callback = function()
 
-		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
 
-		end
-end)
-about:Toggle("无限跳","Toggle",false,function(Value)
-        Jump = Value
-        game.UserInputService.JumpRequest:Connect(function()
-            if Jump then
-                game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
-            end
-        end)
-    end)
-about:Slider("步行速度!", "WalkSpeed", game.Players.LocalPlayer.Character.Humanoid.WalkSpeed, 16, 400, false, function(Speed)
-  spawn(function() while task.wait() do game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Speed end end)
-end)
-about:Slider("跳跃高度!", "JumpPower", game.Players.LocalPlayer.Character.Humanoid.JumpPower, 50, 400, false, function(Jump)
-  spawn(function() while task.wait() do game.Players.LocalPlayer.Character.Humanoid.JumpPower = Jump end end)
-end)
-about:Button("超高画质",function()
-loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
-end)
+end
+})
+Tab:AddButton({
+	Name = "无限跳跃",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+
+end
+})
+
+player:AddTextbox({
+	Name = "移动速度",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end
+})
+
+player:AddTextbox({
+	Name = "跳跃高度",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end
+})
+
+player:AddTextbox({
+	Name = "重力设置",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Workspace.Gravity = Value
+	end
+})
+
+player:AddButton({
+	Name = "🚀飞行",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/U27yQRxS"))()
+  	end
+})
 
 local Tab = Window:MakeTab({
   Name = "doors floor2",
