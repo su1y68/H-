@@ -17,7 +17,6 @@ local Window = OrionLib:MakeWindow({Name = "明中心", HidePremium = false, Sav
 local about = Window:MakeTab({
     Name = "你的信息",
     Icon = "rbxassetid://4483345998",
-    public=“由于最近问题很多 过后将不再更新明中心”
     PremiumOnly = false
 })
 
@@ -26,23 +25,39 @@ about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 
 local Tab = Window:MakeTab({
-  Name = "通用脚本",
+  Name = "找脚本",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
 Tab:AddButton({
-	Name = "飞行脚本",
+	Name = "禁man",
 	Callback = function()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/asehbzi/H-/refs/heads/main/H%E9%A3%9E%E8%A1%8C"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/anlushanjinchangantangwanle/main/jmjmjmjmjmjmjmjmjmjmjmjmjmjmjmjm.lua"))()
 
 end
 })
 Tab:AddButton({
-	Name = "键盘⌨️",
+	Name = "导管中man",
 	Callback = function()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\117\115\101\114\97\110\101\119\114\102\102\47\114\111\98\108\111\120\45\47\109\97\105\110\47\37\69\54\37\57\68\37\65\49\37\69\54\37\65\67\37\66\69\37\69\53\37\56\68\37\56\70\37\69\56\37\65\69\37\65\69\34\41\41\40\41\10")()
+
+end
+})
+Tab:AddButton({
+	Name = "皮脚本",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "xk中心",
+	Callback = function()
+
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\73\78\106\105\97\111\98\122\120\54\47\66\73\78\106\105\97\111\47\109\97\105\110\47\88\75\46\84\88\84\34\41\41\40\41\10")()
 
 end
 })
