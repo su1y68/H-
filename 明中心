@@ -17,6 +17,7 @@ local Window = OrionLib:MakeWindow({Name = "明中心", HidePremium = false, Sav
 local about = Window:MakeTab({
     Name = "你的信息",
     Icon = "rbxassetid://4483345998",
+    public=“由于最近问题很多 过后将不再更新明中心”
     PremiumOnly = false
 })
 
