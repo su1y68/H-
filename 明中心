@@ -99,8 +99,8 @@ local Tab = Window:MakeTab({
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
-about:AddParagraph("对不起 这里【通用1】暂时还没有做")
-about:AddParagraph("如果需要脚本 可以联系我")
+Tab:AddLabel("对不起 这里【通用1】暂时还没有做完成")
+Tab:AddLabel("问题不大 后续更新一样可以")
 Tab:AddButton({
 	Name = "玩家加入与提示",
 	Callback = function()
@@ -411,11 +411,23 @@ local Tab = Window:MakeTab({
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
   })
-player:AddButton({
-	Name = "fps显示",
+
+Tab:AddButton({
+	Name = "Fps显示",
 	Callback = function()
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/FPS-Counter'))()
+
+end
+})
+
+Tab:AddButton({
+
+	Name = "飞行V3（隐藏）",
+
+	Callback = function()
+
+loadstring(game:HttpGet('https://pastebin.com/raw/U27yQRxS'))()
 
 end
 })
