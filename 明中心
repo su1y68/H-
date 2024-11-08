@@ -270,6 +270,15 @@ end)
 end
 })
 
+Tab:AddButton({
+	Name = "飞行",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/gEd1QwJE"))()
+
+end
+})
+
 local Tab = Window:MakeTab({
   Name = "光影脚本",
   Icon = "rbxassetid://4483345998",
@@ -280,6 +289,24 @@ Tab:AddButton({
 	Callback = function()
 
 loadstring(game:HttpGet("https://pastebin.com/raw/Bkf0BJb3"))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "外网特殊改画质【可自调】",
+	Callback = function()
+
+loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "超高画质",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
 
 end
 })
@@ -356,6 +383,39 @@ Tab:AddButton({
 	Callback = function()
 
 loadstring(game:HttpGet("https://rentry.co/linohionb/raw"))()
+
+end
+})
+
+Tab:AddButton({
+    Name = "🐲指令脚本🐲",
+    Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
+
+end
+})
+
+Tab:AddLabel("指令如下（聊天框输入）")
+Tab:AddLabel("透开-透关 ---透视")
+Tab:AddLabel("追踪开-追踪关 ---子弹追踪")
+Tab:AddLabel("收钱开-收钱关 ---收集钱包")
+Tab:AddLabel("收物开-收物关 ---收集物品")
+Tab:AddLabel("抢取款机开-抢取款机关")
+Tab:AddLabel("抢银行开-抢银行关")
+Tab:AddLabel("穿墙开-穿墙关")
+Tab:AddLabel("拳击光环开-拳击光环关")
+
+local Tab = Window:MakeTab({
+  Name = "通用2",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+player:AddButton({
+	Name = "fps显示",
+	Callback = function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/FPS-Counter'))()
 
 end
 })
