@@ -63,6 +63,30 @@ loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\
 
 end
 })
+Tab:AddButton({
+	Name = "落叶中心",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
+
+end
+})
+Tab:AddButton({
+	Name = "安脚本",
+	Callback = function()
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
+
+end
+})
+Tab:AddButton({
+	Name = "白脚本",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TranVanBao1411/ScriptLinhTinh/main/Scare.lua"))()
+
+end
+})
 
 local Tab = Window:MakeTab({
   Name = "最强战场",
@@ -84,7 +108,7 @@ local Tab = Window:MakeTab({
   PremiumOnly = false
   })
 Tab:AddButton({
-	Name = "最强ms 英文版",
+	Name = "ms 英文版",
 	Callback = function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
@@ -98,6 +122,50 @@ Tab:AddButton({
 
 loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
 ---汉化版不是原版有些更新会出bug(汉化版)
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "压力",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "NB",
+	Callback = function()
+
+loadstring(game:HttpGet(('https://github.com/DocYogurt/Main/raw/main/Scripts/Pressure')))()
+
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "俄亥俄",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "俄亥俄❶",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rbxluau/Roblox/main/ScriptHub.lua"))()
+
+end
+})
+Tab:AddButton({
+	Name = "俄亥俄❷",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Night5449791/LUA-SCRIPT/main/Protected_3946246775852348.txt"))()
+
+end
+})
+Tab:AddButton({
+	Name = "俄亥俄 xk",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/XK%20Ohio.lua"))()
 
 end
 })
