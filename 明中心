@@ -154,38 +154,27 @@ loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
 end
 })
 
-player:AddTextbox({
-	Name = "移动速度",
-	Default = "",
-	TextDisappear = true,
+Tab:AddSlider({
+
+	Name = "速度",
+
+	Min = 16,
+
+	Max = 200,
+
+	Default = 16,
+
+	Color = Color3.fromRGB(255,255,255),
+
+	Increment = 1,
+
+	ValueName = "数值",
+
 	Callback = function(Value)
+
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end
-})
 
-player:AddTextbox({
-	Name = "跳跃高度",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end
-})
-
-player:AddTextbox({
-	Name = "重力设置",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Workspace.Gravity = Value
-	end
-})
-
-player:AddButton({
-	Name = "🚀飞行",
-	Callback = function()
-      	loadstring(game:HttpGet("https://pastebin.com/raw/U27yQRxS"))()
-  	end
+end
 })
 
 local Tab = Window:MakeTab({
