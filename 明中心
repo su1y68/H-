@@ -1,1 +1,47 @@
+local CoreGui = game:GetService("StarterGui")
 
+CoreGui:SetCore("SendNotification", {
+    Title = "你的脚本明",
+    Text = "正在加载明中心",
+    Duration = 5, 
+})
+print("suxa帮你开启了反挂机")
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		   wait(1)
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
+local Window = OrionLib:MakeWindow({Name = "明中心", HidePremium = false, SaveConfig = true,IntroText = "欢迎使用明中心", ConfigFolder = "欢迎使用H偏中心"})
+local about = Window:MakeTab({
+    Name = "你的信息",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
+about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
+about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
+
+local Tab = Window:MakeTab({
+  Name = "通用脚本",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "飞行脚本",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/asehbzi/H-/refs/heads/main/H%E9%A3%9E%E8%A1%8C"))()
+
+end
+})
+Tab:AddButton({
+	Name = "键盘⌨️",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+
+end
+})
