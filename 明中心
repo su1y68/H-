@@ -94,6 +94,87 @@ local Tab = Window:MakeTab({
   PremiumOnly = false
   })
 
+Tab:AddButton({
+	Name = "第十三期 娱乐水龙",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/refs/heads/main/KJ%20XSuriryuHub"))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "第12",
+	Callback = function()
+
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy/refs/heads/main/GUI")()
+
+end
+})
+
+Tab:AddButton({
+	Name = "第11",
+	Callback = function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Tp%20exploit%20saitama%20to%20jun'))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "第10",
+	Callback = function()
+
+loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Goku-Moveset-V2-17977"))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "kj脚本",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/refs/heads/main/CAMS_KJ_SCRIPT"))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "奇改jun",
+	Callback = function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Tp%20exploit%20saitama%20to%20jun'))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "饿狼该索尼克",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/7V1mUBtQ"))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "索尼克改tojl",
+	Callback = function()
+
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy/refs/heads/main/GUI")()
+
+end
+})
+
+Tab:AddButton({
+	Name = "LAT【冲等级冲杀戮 配精密高手用】",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+
+end
+})
+
 local Tab = Window:MakeTab({
   Name = "通用1",
   Icon = "rbxassetid://4483345998",
