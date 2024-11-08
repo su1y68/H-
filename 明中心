@@ -200,6 +200,97 @@ Tab:AddSlider({
 end
 })
 
+Tab:AddTextbox({
+
+	Name = "移动速度设置",
+
+	Default = "",
+
+	TextDisappear = true,
+
+	Callback = function(Value)
+
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+end
+})
+
+Tab:AddTextbox({
+
+	Name = "跳跃高度设置",
+
+	Default = "",
+
+	TextDisappear = true,
+
+	Callback = function(Value)
+
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+end
+})
+
+Tab:AddButton({
+	Name = "爬墙",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+
+end
+})
+
+Tab:AddButton({
+
+	Name = "点击传送工具",
+
+	Callback = function()
+
+mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
+
+end
+})
+
+Tab:AddButton({
+
+	Name = "防止掉线（反挂机）",
+
+	Callback = function()
+
+	print("Anti Afk On")
+
+		local vu = game:GetService("VirtualUser")
+
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+		   wait(1)
+
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+ end)
+end
+})
+
+player:AddButton({
+	Name = "🚀飞行",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/U27yQRxS"))()
+end
+})
+
+local Tab = Window:MakeTab({
+  Name = "光影脚本",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+Tab:AddButton({
+	Name = "光影v2",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/Bkf0BJb3"))()
+
+end
+})
+
 local Tab = Window:MakeTab({
   Name = "doors floor2",
   Icon = "rbxassetid://4483345998",
