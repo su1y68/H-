@@ -8,7 +8,6 @@ CoreGui:SetCore("SendNotification", {
 CoreGui:SetCore("SendNotification", {
     Title = "识别该服务器中",
     Text = "已全部识别",
-    Text = "已开启反挂机系统",
     Duration = 7,
 })
 print("suxa帮你开启了反挂机")
