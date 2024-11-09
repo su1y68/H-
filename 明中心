@@ -1,8 +1,8 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "脚本 bing启动中",
-    Text = "正在加载bing中心",
+    Title = "脚本 bing启动中🤓",
+    Text = "正在加载bing中心🤗",
     Duration = 5, 
 })
 print("suxa帮你开启了反挂机")
@@ -20,6 +20,7 @@ local about = Window:MakeTab({
     PremiumOnly = false
 })
 
+about:Label("bing中心 欢迎您使用")
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
