@@ -47,6 +47,10 @@ local win = ui:new("bing脚本")
 local UITab1 = win:Tab("『信息』",'7734068321')
 
 local about = UITab1:section("『作者信息』",true)
+about:Label("QQ二群：692367787")
+about:Label("QQ群：885222665")
+about:Label("QQ号:386884885")
+about:Label("suxa 小皮指导")
 about:Label("你的账号年龄:"..player.AccountAge.."天")
 about:Label("你现在的服务器id:"..game.GameId)
 about:Label("你的用户ID:"..game.Players.LocalPlayer.UserId)
@@ -312,4 +316,20 @@ end)
 
 about:Button("飞行v1",function()
 loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
+end)
+
+local UITab3 = win:Tab("『最强战场』",'7734068321')
+
+local about = UITab3:section("『最强战场』",true)
+
+about:Button("饿狼1+2",function()
+loadstring(game:HttpGet("https://pastefy.app/Z7DawZJB/raw"))()
+end)
+
+about:Button("国外LAT佬 黑客脚本",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+end)
+
+about:Button("LAT佬 v2仿",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua"))(
 end)
