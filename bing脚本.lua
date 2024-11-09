@@ -46,7 +46,7 @@ local win = ui:new("bing脚本")
 --
 local UITab1 = win:Tab("『信息』",'7734068321')
 
-local about = UITab1:section("『作者信息』",false)
+local about = UITab1:section("『作者信息』",true)
 about:Label("你的账号年龄:"..player.AccountAge.."天")
 about:Label("你现在的服务器id:"..game.GameId)
 about:Label("你的用户ID:"..game.Players.LocalPlayer.UserId)
