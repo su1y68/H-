@@ -684,7 +684,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/JoshSheesh/Waver-Full
 end
 })
 
-
+Tab:AddLabel("复制下面卡密")
+setclipboard("Key: WaverHub_Key12648")
 
 local Tab = Window:MakeTab({
   Name = "一路向西",
