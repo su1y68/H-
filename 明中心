@@ -226,6 +226,33 @@ loadstring(game:HttpGet("https://gist.githubusercontent.com/JcBoomin/a63e9ac3e90
 end
 })
 
+Tab:AddButton({
+	Name = "LCY v2",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua"))(
+
+end
+})
+
+Tab:AddButton({
+	Name = "gozu",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/main/APOPHENIA.lua"))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "gozu v2",
+	Callback = function()
+
+loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Goku-Moveset-V2-17977"))()
+
+end
+})
+
 local Tab = Window:MakeTab({
   Name = "通用1",
   Icon = "rbxassetid://4483345998",
