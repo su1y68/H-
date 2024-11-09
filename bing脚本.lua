@@ -350,6 +350,10 @@ about:Button("光头改jun",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Tp%20exploit%20saitama%20to%20jun'))()
 end)
 
+about:Button("称金次对奇遇",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/eEDYWj8p"))()
+end)
+
 about:Button("💀IDK the script☠💀",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/ARCAURA.lua"))()
 end)
