@@ -34,7 +34,7 @@ about:AddParagraph("已制作二天")
 
 local Tab = Window:MakeTab({
   Name = "找脚本",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -96,7 +96,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "最强战场",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 
@@ -228,7 +228,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "通用1",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 Tab:AddLabel("对不起 这里【通用1】暂时还没有做完成")
@@ -422,7 +422,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "光影脚本",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -454,7 +454,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "doors floor2",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -496,7 +496,7 @@ Tab:AddLabel("👆此脚本可以自动检测 rooms")
 
 local Tab = Window:MakeTab({
   Name = "压力",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -519,7 +519,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "俄亥俄",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 Tab:AddButton({
@@ -598,7 +598,7 @@ Tab:AddLabel("因为之前赞助过-所以给我使用")
 
 local Tab = Window:MakeTab({
   Name = "战斗大亨",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 
@@ -615,7 +615,7 @@ Tab:AddLabel("暂时停")
 
 local Tab = Window:MakeTab({
   Name = "彩虹好友",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 
@@ -630,13 +630,13 @@ end
 
 local Tab = Window:MakeTab({
   Name = "自然灾害",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 
 local Tab = Window:MakeTab({
   Name = "战斗勇士",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 
@@ -651,7 +651,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "自瞄",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 
@@ -666,7 +666,7 @@ end
 
 local Tab = Window:MakeTab({
   Name = "刃刀球",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 
@@ -695,7 +695,7 @@ Tab:AddLabel("Key: WaverHub_Key12648")
 
 local Tab = Window:MakeTab({
   Name = "一路向西",
-  Icon = "rbxassetid://4483345998",
+  Icon = "rbxassetid://15613380753",
   PremiumOnly = false
   })
 
