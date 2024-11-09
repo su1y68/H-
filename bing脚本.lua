@@ -327,6 +327,23 @@ about:Button("国外LAT佬 黑客脚本",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
 end)
 
-about:Button("国外LA 黑客v2",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua"))(
+about:Button("刀锋",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zyrask/Nexus-Base/main/atomic-blademaster%20to%20sukuna"))()
 end)
+
+about:Button("gojo",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/main/Latest.lua"))()
+end)
+
+about:Button("饿狼改索尼克",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/7V1mUBtQ"))()
+end)
+
+about:Button("光头改jun",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Tp%20exploit%20saitama%20to%20jun'))()
+end)
+
+about:Button("💀IDK the script☠💀",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/ARCAURA.lua"))()
+end)
+about:Label("我不知道这个是什么")
