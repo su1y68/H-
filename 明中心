@@ -211,6 +211,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/
 end
 })
 
+Tab:AddButton({
+	Name = "饿狼自动1+2",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/Z7DawZJB/raw"))()
+
+end
+})
+
 local Tab = Window:MakeTab({
   Name = "通用1",
   Icon = "rbxassetid://4483345998",
