@@ -62,11 +62,6 @@ local about = UITab3:section("『公告信息』",true)
 about:Label("🤗作者QQ 386884885 名suxa🤗")
 about:Label("🤓QQ群：692367787 2：885222665🤓")
 about:Label("❤️💔世间的存在只是一个独角戏罢了💔❤️")
-Tab:AddButton({
-	Name = "复制作者QQ",
-	Callback = function()
-     setclipboard("386884885😋")
-end)
 
 local UITab3 = win:Tab("『通用』",'7734068321')
 
@@ -364,7 +359,7 @@ local UITab3 = win:Tab("『其他脚本』",'7734068321')
 
 local about = UITab3:section("『其他脚本』",true)
 
-about:Button("【重磅嘉宾】来自本群的HT的脚本(jerk中心)",function()
+about:Button("【重磅嘉宾】来自本群的HT的脚本jerk中心",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/asehbzi/hacker/refs/heads/main/niggerfuck"))()
 end)
 about:Label("『由于HVT太缺钱了 所以开卖』")
