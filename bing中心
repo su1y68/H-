@@ -537,15 +537,6 @@ local Tab = Window:MakeTab({
   })
 
 Tab:AddButton({
-	Name = "legend目前很强以加旁路",
-	Callback = function()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ohio88/main/autofarm14"))()
-
-end
-})
-
-Tab:AddButton({
 	Name = "俄亥俄❶",
 	Callback = function()
 
