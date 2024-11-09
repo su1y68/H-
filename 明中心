@@ -202,6 +202,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/
 end
 })
 
+Tab:AddButton({
+	Name = "光头改gojo v2 油管vnopi",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/refs/heads/main/LatestV2.lua"))()
+
+end
+})
+
 local Tab = Window:MakeTab({
   Name = "通用1",
   Icon = "rbxassetid://4483345998",
