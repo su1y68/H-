@@ -3,6 +3,8 @@ local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "脚本 bing启动中🤓",
     Text = "正在加载bing中心🤗",
+    Title = "识别你的信息中",
+    Text = "已全部识别该服务器",
     Duration = 5, 
 })
 print("suxa帮你开启了反挂机")
@@ -15,17 +17,17 @@ print("suxa帮你开启了反挂机")
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
 local Window = OrionLib:MakeWindow({Name = "bing中心", HidePremium = false, SaveConfig = true,IntroText = "欢迎你使用bing中心", ConfigFolder = "欢迎使用bing中心"})
 local about = Window:MakeTab({
-    Name = "你的信息",
+    Name = "公告信息",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
-about:Label("bing中心 欢迎您使用")
+about:AddParagraph("永不跑路 永远持续更新")
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 about:AddParagraph("以后每周六～日更新一次")
-about:AddParagraph("已制作一天")
+about:AddParagraph("已制作二天")
 
 local Tab = Window:MakeTab({
   Name = "找脚本",
