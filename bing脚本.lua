@@ -371,8 +371,8 @@ local about = UITab3:section("『刀刃球』",true)
 local UITab3 = win:Tab("『doors』",'7734068321')
 
 local about = UITab3:section("『doors』",true)
-about:Label("❤️注意 这两script不是一样的❤️")
+about:Label("❤️注意 这两script不是一样的❤
 
-about:Button("public v1",function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Skibiditoiletscripts/e/refs/heads/main/gravity%20gun'),true))()
+about:Button("pio v2",function()
+https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))()
 end)
