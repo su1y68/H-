@@ -3,9 +3,12 @@ local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "脚本 bing启动中🤓",
     Text = "正在加载bing中心🤗",
-    Title = "识别你的信息中",
-    Text = "已全部识别该服务器",
-    Duration = 5, 
+    Duration = 7, 
+})
+CoreGui:SetCore("SendNotification", {
+    Title = "识别该服务器中",
+    Text = "已全部识别",
+    Duration = 7,
 })
 print("suxa帮你开启了反挂机")
 		local vu = game:GetService("VirtualUser")
