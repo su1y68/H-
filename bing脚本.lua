@@ -59,12 +59,9 @@ about:Label("你现在的服务器名称:"..game:GetService("MarketplaceService"
 local UITab3 = win:Tab("『公告信息』",'7734068321')
 
 local about = UITab3:section("『公告信息』",true)
-
-Tab:AddButton({
-	Name = "复制QQ主",
-	Callback = function()
-     setclipboard("386884885")
-end)
+about:Label("🤗作者QQ 386884885 名suxa🤗")
+about:Label("🤓QQ群：692367787 2：885222665🤓")
+about:Label("❤️💔世间的存在只是一个独角戏罢了💔❤️")
 
 local UITab3 = win:Tab("『通用』",'7734068321')
 
