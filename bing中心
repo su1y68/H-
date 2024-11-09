@@ -31,7 +31,11 @@ about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 about:AddParagraph("以后每周六～日更新一次")
-about:AddParagraph("已制作二天")
+about:AddParagraph("已制作二天半")
+about:AddParagraph("作者QQ：386884885")
+about:AddParagraph("QQ群加入692367787")
+about:AddParagraph("合号1477690040")
+about:AddParagraph("965394395群号的suxa大家庭")
 
 local Tab = Window:MakeTab({
   Name = "找脚本",
