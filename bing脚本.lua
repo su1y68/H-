@@ -329,7 +329,3 @@ end)
 about:Button("国外LAT佬 黑客脚本",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
 end)
-
-about:Button("LAT佬 v2仿",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua"))(
-end)
