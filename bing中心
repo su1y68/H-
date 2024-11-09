@@ -178,7 +178,7 @@ end
 })
 
 Tab:AddButton({
-	Name = "LAT【冲等级冲杀戮 配精密高手用】",
+	Name = "LAT【国外最强 v1】",
 	Callback = function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
@@ -205,7 +205,7 @@ end
 })
 
 Tab:AddButton({
-	Name = "❸",
+	Name = "LIo",
 	Callback = function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/SaitamaBattlegrounds.lua"))()
@@ -227,6 +227,15 @@ Tab:AddButton({
 	Callback = function()
 
 loadstring(game:HttpGet("https://gist.githubusercontent.com/JcBoomin/a63e9ac3e90cef03ecf37e997fd21632/raw/98b567b81f61bb30042e0078b78f3fb24685fb8d/Gojo", true))()
+
+end
+})
+
+Tab:AddButton({
+	Name = "最强战场【国外最强】v2",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua"))(
 
 end
 })
