@@ -3,12 +3,12 @@ local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "脚本 bing启动中🤓",
     Text = "正在加载bing中心🤗",
-    Duration = 7, 
+    Duration = 10, 
 })
 CoreGui:SetCore("SendNotification", {
     Title = "识别该服务器中",
     Text = "已全部识别",
-    Duration = 7,
+    Duration = 15,
 })
 print("suxa帮你开启了反挂机")
 		local vu = game:GetService("VirtualUser")
@@ -218,10 +218,10 @@ end
 })
 
 Tab:AddButton({
-	Name = "饿狼自动1+2",
+	Name = "gojo NEW",
 	Callback = function()
 
-loadstring(game:HttpGet("https://pastefy.app/Z7DawZJB/raw"))()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/JcBoomin/a63e9ac3e90cef03ecf37e997fd21632/raw/98b567b81f61bb30042e0078b78f3fb24685fb8d/Gojo", true))()
 
 end
 })
