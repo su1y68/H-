@@ -62,6 +62,11 @@ local about = UITab3:section("『公告信息』",true)
 about:Label("🤗作者QQ 386884885 名suxa🤗")
 about:Label("🤓QQ群：692367787 2：885222665🤓")
 about:Label("❤️💔世间的存在只是一个独角戏罢了💔❤️")
+Tab:AddButton({
+	Name = "复制作者QQ",
+	Callback = function()
+     setclipboard("386884885😋")
+end)
 
 local UITab3 = win:Tab("『通用』",'7734068321')
 
@@ -367,8 +372,3 @@ about:Label("『由于HVT太缺钱了 所以开卖』")
 local UITab3 = win:Tab("『刀刃球』",'7734068321')
 
 local about = UITab3:section("『刀刃球』",true)
-
-about:Button("油管刀刃球❶",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JoshSheesh/Waver-Full-Script/refs/heads/main/Protected_7926735646342814.txt"))()
-end)
-about:Label(😋"请拾取你的密钥 Key: WaverHub_Key12648"😋)
