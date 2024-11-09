@@ -1,5 +1,3 @@
--- Made BY Mr.Alegator
-
 local screenGui = Instance.new("ScreenGui")
 screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
@@ -99,7 +97,7 @@ SubmitButton.MouseButton1Click:Connect(function()
     if KeySystem == "codexone" then   
 screenGui:Destroy()
 
-https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E5%8D%A1%E5%AF%86%E7%B3%BB%E7%BB%9F
+loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E6%98%8E%E4%B8%AD%E5%BF%83"))()
   
   end
 end)
