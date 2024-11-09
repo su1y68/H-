@@ -42,22 +42,12 @@ game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚�
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="成功"; Duration = 4; })
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/djnd/refs/heads/main/%E5%86%B7444.txt"))();        
-local win = ui:new("冷脚本")
+local win = ui:new("bing脚本")
 --
 local UITab1 = win:Tab("『信息』",'7734068321')
 
 local about = UITab1:section("『作者信息』",false)
 
-about:Label("bing脚本")
-about:Label("作者QQ：386884885")
-about:Label("QQ群：692367787")
-about:Label("QQ2群:885222665")
-about:Label("作者：suxa、冷")
-about:Label("进群发最新bing脚本")
-about:Label("脚本更新中")
-about:Label("脚本不优化")
-about:Label("欢迎使用")
-about:Label("bing脚本😋😋")
 about:Label("你的账号年龄:"..player.AccountAge.."天")
 about:Label("你现在的服务器id:"..game.GameId)
 about:Label("你的用户ID:"..game.Players.LocalPlayer.UserId)
