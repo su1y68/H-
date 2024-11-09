@@ -226,15 +226,6 @@ loadstring(game:HttpGet("https://gist.githubusercontent.com/JcBoomin/a63e9ac3e90
 end
 })
 
-Tab:AddButton({
-	Name = "LA CY v2",
-	Callback = function()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua"))(
-
-end
-})
-
 local Tab = Window:MakeTab({
   Name = "通用1",
   Icon = "rbxassetid://4483345998",
