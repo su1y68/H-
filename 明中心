@@ -675,6 +675,17 @@ end
 
 Tab:AddLabel("卡密是75nw4w435q52")
 
+Tab:AddButton({
+	Name = "油管lp付费脚本",
+	Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JoshSheesh/Waver-Full-Script/refs/heads/main/Protected_7926735646342814.txt"))()
+
+end
+})
+
+
+
 local Tab = Window:MakeTab({
   Name = "一路向西",
   Icon = "rbxassetid://4483345998",
