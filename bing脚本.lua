@@ -376,7 +376,3 @@ about:Label("❤️注意 这两script不是一样的❤️")
 about:Button("public v1",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Skibiditoiletscripts/e/refs/heads/main/gravity%20gun'),true))()
 end)
-
-about:Button("public v2",function()
-https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))()
-end)
