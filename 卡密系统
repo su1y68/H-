@@ -97,11 +97,11 @@ SubmitButton.MouseButton1Click:Connect(function()
     if KeySystem == "codexone" then   
 screenGui:Destroy()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E6%98%8E%E4%B8%AD%E5%BF%83"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/bing%E4%B8%AD%E5%BF%83"))()
   
   end
 end)
 
 GetKeyButton.MouseButton1Click:Connect(function()
- setclipboard("没有卡密就别用了") 
+ setclipboard("没有卡密请加群692367787") 
 end)
