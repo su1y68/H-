@@ -222,6 +222,15 @@ end
 })
 
 Tab:AddButton({
+	Name = "饿狼1+2",
+	Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/Z7DawZJB/raw"))()
+
+end
+})
+
+Tab:AddButton({
 	Name = "gojo NEW",
 	Callback = function()
 
