@@ -38,8 +38,8 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="为您加载"; Duration = 4; })
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="成功"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="为您加载"; Duration = 7; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="成功"; Duration = 7; })
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/djnd/refs/heads/main/%E5%86%B7444.txt"))();        
 local win = ui:new("bing脚本")
