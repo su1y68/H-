@@ -56,6 +56,16 @@ about:Label("你的注入器:"..identifyexecutor())
 about:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
 about:Label("你现在的服务器名称:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
 
+local UITab3 = win:Tab("『公告信息』",'7734068321')
+
+local about = UITab3:section("『公告信息』",true)
+
+Tab:AddButton({
+	Name = "复制QQ主",
+	Callback = function()
+     setclipboard("386884885")
+end)
+
 local UITab3 = win:Tab("『通用』",'7734068321')
 
 local about = UITab3:section("『通用』",true)
@@ -346,4 +356,22 @@ end)
 about:Button("💀IDK the script☠💀",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/ARCAURA.lua"))()
 end)
-about:Label("我不知道这个是什么")
+about:Label("🤗『我不知道这个是什么』🤗")
+
+local UITab3 = win:Tab("『其他脚本』",'7734068321')
+
+local about = UITab3:section("『其他脚本』",true)
+
+about:Button("【重磅嘉宾】来自本群的HT的脚本(jerk中心)",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/asehbzi/hacker/refs/heads/main/niggerfuck"))()
+end)
+about:Label("『由于HVT太缺钱了 所以开卖』")
+
+local UITab3 = win:Tab("『刀刃球』",'7734068321')
+
+local about = UITab3:section("『刀刃球』",true)
+
+about:Button("油管刀刃球❶",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JoshSheesh/Waver-Full-Script/refs/heads/main/Protected_7926735646342814.txt"))()
+end)
+about:Label(😋"请拾取你的密钥 Key: WaverHub_Key12648"😋)
