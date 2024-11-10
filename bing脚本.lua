@@ -375,3 +375,34 @@ local about = UITab3:section("『刀刃球』",true)
 local UITab3 = win:Tab("『doors』",'7734068321')
 
 local about = UITab3:section("『doors』",true)
+
+local UITab3 = win:Tab("『通用2』",'7734068321')
+
+local about = UITab3:section("『通用2』",true)
+
+about:Button("hua 画质",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/arzRCgwS"))()
+end)
+
+about:Button("画质v2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+end)
+
+about:Button("超高画质",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+end)
+about:Label("以上是画质更改👆👆👆")
+about:Label("以下是通用功能👇👇👇")
+
+about:Button("改动作",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Zj4NnKs6"))()
+end)
+
+local UITab3 = win:Tab("『自然灾害』",'7734068321')
+
+local about = UITab3:section("『自然灾害』",true)
+
+about:Button("hub",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/5fKvum70"))()
+end)
+about:Label("😡通用功能够玩了😡")
