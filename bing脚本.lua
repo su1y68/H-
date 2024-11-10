@@ -40,6 +40,9 @@ Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="为您加载"; Duration = 7; })
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="成功"; Duration = 7; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『作者：suxa 冉 冷』"; Text ="已识别全部该服务器"; Duration = 7; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『记得加群』"; Text ="不然你78没了"; Duration = 7; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『识别使用人数』"; Text ="您是第298位使用者"; Duration = 8; })
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/djnd/refs/heads/main/%E5%86%B7444.txt"))();        
 local win = ui:new("bing脚本")
@@ -62,6 +65,12 @@ local about = UITab3:section("『公告信息』",true)
 about:Label("🤗作者QQ 386884885 名suxa🤗")
 about:Label("🤓QQ群：692367787 2：885222665🤓")
 about:Label("❤️💔世间的存在只是一个独角戏罢了💔❤️")
+about:Label("谢谢冷和小皮 冉姐的指导")
+about:Label("每周六周日更新")
+about:Label("已制作三天")
+about:Label("都归LN所有")
+about:Label("此脚本永久免费")
+about:Label("😡😡禁各位78们把这脚本拿来倒卖😡😡")
 
 local UITab3 = win:Tab("『通用』",'7734068321')
 
