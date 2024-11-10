@@ -383,6 +383,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/asehbzi/hacker/refs/h
 end)
 about:Label("『由于HVT太缺钱了 所以开卖』")
 
+about:Button("鹤脚本",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/qazpin66/-/refs/heads/main/%E9%B9%A41.5.lua"))()
+end)
+
 about:Button("落叶中心",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
 end)
@@ -412,6 +416,14 @@ local about = UITab3:section("『doors』",true)
 about:Button("ms汉化",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XSKMS/MS-Chinese-XXZ/refs/heads/main/rename.txt"))()
 end)
+about:Label("目前最强就是ms")
+
+local about = UITab3:section("『国人脚本』",true)
+
+about:Button("人机doors",function()
+loadstring(game:HttpGet("https://github.com/DocYogurt/Main/raw/main/Scripts/DF2RW.lua"))()
+end)
+about:Label("娱乐功能专用")
 
 local UITab3 = win:Tab("『通用2』",'7734068321')
 
