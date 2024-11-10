@@ -368,6 +368,24 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/asehbzi/hacker/refs/h
 end)
 about:Label("『由于HVT太缺钱了 所以开卖』")
 
+about:Button("落叶中心",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
+end)
+
+about:Button("禁漫中心",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
+end)
+
+about:Button("堪比导管中心的蓝标中心",function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\84\72\68\90\69\80\47\66\108\117\101\47\114\101\102\115\47\104\101\97\100\115\47\109\97\105\110\47\37\69\56\37\57\51\37\57\68\37\69\54\37\65\48\37\56\55\37\69\56\37\56\52\37\57\65\37\69\54\37\57\67\37\65\67\63\116\111\107\101\110\61\71\72\83\65\84\48\65\65\65\65\65\65\67\86\88\87\78\73\89\82\79\76\53\88\87\73\81\68\88\83\65\54\89\52\54\90\88\87\81\71\88\81\34\41\41\40\41\10")()
+end)
+
+about:Button("皮脚本",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
+end)
+about:Label("😋这些是免费脚本😋")
+about:Label("😇😇用去吧😋孩子😇加油孩子我相信你😇😇")
+
 local UITab3 = win:Tab("『刀刃球』",'7734068321')
 
 local about = UITab3:section("『刀刃球』",true)
@@ -390,6 +408,10 @@ end)
 
 about:Button("超高画质",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+end)
+
+about:Button("极致可调节画质",function()
+loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
 end)
 about:Label("以上是画质更改👆👆👆")
 about:Label("以下是通用功能👇👇👇")
