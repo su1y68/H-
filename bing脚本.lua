@@ -322,6 +322,10 @@ about:Button("飞行v1",function()
 loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
 end)
 
+about:Button("手柄锁定",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yzeedw/Mortalv2-main/main/mortal.cc/ekittens/mc%20target%20v0.3"))()
+end)
+
 local UITab3 = win:Tab("『最强战场』",'7734068321')
 
 local about = UITab3:section("『最强战场』",true)
@@ -359,6 +363,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/ref
 end)
 about:Label("🤗『我不知道这个是什么』🤗")
 
+about:Button("隐身",function()
+getgenv().Music = false
+--Setting this to false usually fixes most executors
+--also it helps load time a little bit
+getgenv().AttackQuality = 'High'
+--Set to Low,High
+ getgenv().ConstantSpeed = false
+--if you want your speed to be constant
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/main/APOPHENIA.lua"))()
+end)
+
 local UITab3 = win:Tab("『其他脚本』",'7734068321')
 
 local about = UITab3:section("『其他脚本』",true)
@@ -393,6 +408,10 @@ local about = UITab3:section("『刀刃球』",true)
 local UITab3 = win:Tab("『doors』",'7734068321')
 
 local about = UITab3:section("『doors』",true)
+
+about:Button("ms汉化",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XSKMS/MS-Chinese-XXZ/refs/heads/main/rename.txt"))()
+end)
 
 local UITab3 = win:Tab("『通用2』",'7734068321')
 
