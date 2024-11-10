@@ -363,6 +363,65 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/ref
 end)
 about:Label("🤗『我不知道这个是什么』🤗")
 
+local about = UITab3:section("『本群脚本公告【动作集】』",true)
+
+about:Button("第14期",function()
+getgenv().morph = false -- turn false to true if you want custom accessories
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/refs/heads/main/LatestV2.lua"))()
+end)
+
+about:Button("第13期",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/eEDYWj8p"))()
+end)
+
+about:Button("第12期",function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy/refs/heads/main/GUI")()
+end)
+
+about:Button("第11期",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Tp%20exploit%20saitama%20to%20jun'))()
+end)
+
+about:Button("第10期",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Goku-Moveset-V2-17977"))()
+end)
+
+about:Button("第9期",function()
+loadstring(game:HttpGet"https://gist.githubusercontent.com/kjremaker/b092496fc11a57e2c50477154176fa3e/raw/2148f00a036a1799118541765675f3f6a0f8adae/GAROU%20TO%20SURIYU%20BETTER%20THAN%20THE%20OTHERS%20FR")()
+end)
+
+about:Button("第8期",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Mautiku/ehh/main/strong%20guest.lua.txt'))()
+end)
+
+about:Button("第7期",function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/h8h88/hubfr/main/hubfr")()
+end)
+
+about:Button("第6期",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zyrask/Nexus-Base/main/atomic-blademaster%20to%20sukuna"))()
+end)
+
+about:Button("第5期",function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/h8h88/hubfr/main/hubfr")()
+end)
+
+about:Button("第4期",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/1yaXL0rA'))()
+end)
+
+about:Button("第3期",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/main/Kyra%20Gojo%20Tsb%20Bypassed"))()
+end)
+
+about:Button("第2期",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/main/Latest.lua"))()
+end)
+
+about:Button("第1期",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Doumaix/qqwrxxxx/main/gojo_v2.4.lua"))()
+end)
+
 about:Button("隐身",function()
 getgenv().Music = false
 --Setting this to false usually fixes most executors
