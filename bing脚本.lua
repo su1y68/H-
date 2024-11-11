@@ -373,6 +373,24 @@ end)
 about:Label("🤗『我不知道这个是什么』🤗")
 
 local about = UITab3:section("『本群脚本公告【动作集】』",true)
+about:Label("😇QQ请加群885222665😋 不加群你用这些脚本你妈没了😇")
+
+about:Button("改tojo",function()
+loadstring(game:HttpGet("https://paste.ee/r/0uIxM"))()
+end)
+
+about:Button("JJS GOJO moveset",function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/JcBoomin/a63e9ac3e90cef03ecf37e997fd21632/raw/98b567b81f61bb30042e0078b78f3fb24685fb8d/Gojo",true))()
+end)
+
+about:Button("A-TRAIN moveset",function()
+loadstring(game:HttpGet("https://paste.ee/r/AnZ5j"))()
+end)
+
+about:Button("改gojo",function()
+getgenv().morph = true -- turn false to true if you want custom accessories
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/refs/heads/main/LatestV2.lua"))()
+end)
 
 about:Button("第14期",function()
 getgenv().morph = false -- turn false to true if you want custom accessories
