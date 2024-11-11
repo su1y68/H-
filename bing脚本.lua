@@ -42,7 +42,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚�
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="成功"; Duration = 7; })
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『作者：suxa 冉 冷』"; Text ="已识别全部该服务器"; Duration = 7; })
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『记得加群』"; Text ="不然你78没了"; Duration = 7; })
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『识别使用人数』"; Text ="您是第298位使用者"; Duration = 8; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『识别使用人数』"; Text ="😋😋"; Duration = 8; })
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/djnd/refs/heads/main/%E5%86%B7444.txt"))();        
 local win = ui:new("bing脚本")
@@ -527,3 +527,23 @@ about:Button("hub",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/5fKvum70"))()
 end)
 about:Label("😡通用功能够玩了😡")
+
+local UITab3 = win:Tab("『俄亥俄』",'7734068321')
+
+local about = UITab3:section("『俄亥俄 ohio』",true)
+
+about:Button("老外的",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PUSCRIPTS/ITEM-GRABBER/refs/heads/main/item-grabber-by-pinguin-V1"))()
+end)
+
+about:Button("老外的2 v5",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PUSCRIPTS/PinguinHub/refs/heads/main/V5"))()
+end)
+
+about:Button("老外的v3",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PUSCRIPTS/MOBILE-DEALER-V1/refs/heads/main/V1"))()
+end)
+
+about:Button("老外的 4",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PUSCRIPTS/C-BRING-V1/refs/heads/main/V1-PHONE"))()
+end)
