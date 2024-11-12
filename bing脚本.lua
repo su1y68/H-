@@ -339,6 +339,10 @@ local UITab3 = win:Tab("『最强战场』",'7734068321')
 
 local about = UITab3:section("『最强战场』",true)
 
+about:Button("饿狼对贝塔",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JcBoomin/UEVEGETA/refs/heads/main/Script"))()
+end)
+
 about:Button("饿狼1+2",function()
 loadstring(game:HttpGet("https://pastefy.app/Z7DawZJB/raw"))()
 end)
