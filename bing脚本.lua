@@ -575,7 +575,7 @@ local UITab3 = win:Tab("『战斗战士』",'7734068321')
 local about = UITab3:section("『战斗战士hub』",true)
 
 about:Button("hub v2",function()
-loadstring(game:HttpGet("https://github.com/Hosvile/InfiniX/releases/latest/download/main.lua", true))
+local __function = loadstring(game:HttpGet("https://github.com/Hosvile/InfiniX/releases/latest/download/main.lua", true))
 end)
 
 about:Button("hvub lp",function()
