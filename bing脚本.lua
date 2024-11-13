@@ -575,8 +575,13 @@ local UITab3 = win:Tab("『战斗战士』",'7734068321')
 local about = UITab3:section("『战斗战士hub』",true)
 
 about:Button("hub v2",function()
+--```lua
 local __function = loadstring(game:HttpGet("https://github.com/Hosvile/InfiniX/releases/latest/download/main.lua", true))
+
+__function(__function)
+--```
 end)
+about:Label("👆要key  👇免费")
 
 about:Button("hvub lp",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/speedwavevip/scriptspeed/refs/heads/main/CombatWarriors_English"))()
