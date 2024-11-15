@@ -339,6 +339,10 @@ local UITab3 = win:Tab("『最强战场』",'7734068321')
 
 local about = UITab3:section("『最强战场』",true)
 
+about:Button("SUKUNA改饿狼",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Yourfavoriteguy/Sukuna/refs/heads/main/CLEAVE!'))()
+end)
+
 about:Button("饿狼对贝塔",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JcBoomin/UEVEGETA/refs/heads/main/Script"))()
 end)
@@ -453,7 +457,7 @@ about:Button("第1期",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Doumaix/qqwrxxxx/main/gojo_v2.4.lua"))()
 end)
 
-about:Button("隐身",function()
+about:Button("特效巨他妈多【金属棒球】",function()
 getgenv().Music = false
 --Setting this to false usually fixes most executors
 --also it helps load time a little bit
