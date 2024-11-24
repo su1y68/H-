@@ -39,13 +39,12 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="为您加载"; Duration = 7; })
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="成功"; Duration = 7; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="成功"; Duration = 8; })
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『作者：suxa 冉 冷』"; Text ="已识别全部该服务器"; Duration = 7; })
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『记得加群』"; Text ="不然你78没了"; Duration = 7; })
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『识别使用人数』"; Text ="😋😋"; Duration = 8; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『功能少开』"; Text ="以防止封服务"; Duration = 8; })
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/djnd/refs/heads/main/%E5%86%B7444.txt"))();        
-local win = ui:new("bing脚本")
+local win = ui:new("明bing")
 --
 local UITab1 = win:Tab("『信息』",'7734068321')
 
@@ -64,12 +63,12 @@ local UITab3 = win:Tab("『公告信息』",'7734068321')
 local about = UITab3:section("『公告信息』",true)
 about:Label("🤗作者QQ 386884885 名suxa🤗")
 about:Label("🤓QQ群：692367787 2：885222665🤓")
-about:Label("❤️💔世间的存在只是一个独角戏罢了💔❤️")
+about:Label("💔世间的存在只是一个场戏罢了💔")
 about:Label("谢谢冷和小皮 冉姐的指导")
 about:Label("每周六周日更新")
-about:Label("已制作三天")
-about:Label("都归LN所有")
-about:Label("此脚本永久免费")
+about:Label("已制作11天")
+about:Label("一定都归LN所有")
+about:Label("此脚本仅快捷缝合")
 about:Label("😡😡禁各位78们把这脚本拿来倒卖😡😡")
 
 local UITab3 = win:Tab("『通用』",'7734068321')
@@ -331,14 +330,15 @@ about:Button("飞行v1",function()
 loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
 end)
 
-about:Button("手柄锁定",function()
+about:Button("aimbot",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yzeedw/Mortalv2-main/main/mortal.cc/ekittens/mc%20target%20v0.3"))()
 end)
 
-local UITab3 = win:Tab("『最强战场』",'7734068321')
+local UITab3 = win:Tab("『娱乐用 最强战场』",'7734068321')
 
-local about = UITab3:section("『最强战场』",true)
+local about = UITab3:section("『最强战场😶』",true)
 
+about:Label("最新动作集(持续更新ing~)")
 about:Button("SUKUNA改饿狼",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Yourfavoriteguy/Sukuna/refs/heads/main/CLEAVE!'))()
 end)
@@ -347,14 +347,16 @@ about:Button("饿狼对贝塔",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JcBoomin/UEVEGETA/refs/heads/main/Script"))()
 end)
 
+about:Label("下面这些是攻击类")
 about:Button("饿狼1+2",function()
 loadstring(game:HttpGet("https://pastefy.app/Z7DawZJB/raw"))()
 end)
 
-about:Button("国外LAT佬 黑客脚本",function()
+about:Button("LAT脚本(漏洞攻击)",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
 end)
 
+about:Label("老版动作集👇")
 about:Button("刀锋",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zyrask/Nexus-Base/main/atomic-blademaster%20to%20sukuna"))()
 end)
@@ -378,7 +380,6 @@ end)
 about:Button("💀IDK the script☠💀",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/ARCAURA.lua"))()
 end)
-about:Label("🤗『我不知道这个是什么』🤗")
 
 local about = UITab3:section("『本群脚本公告【动作集】』",true)
 about:Label("😇QQ请加群885222665😋 不加群你用这些脚本你妈没了😇")
@@ -489,7 +490,7 @@ about:Button("禁漫中心",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
 end)
 
-about:Button("堪比导管中心的蓝标中心",function()
+about:Button("蓝标中心",function()
 loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\84\72\68\90\69\80\47\66\108\117\101\47\114\101\102\115\47\104\101\97\100\115\47\109\97\105\110\47\37\69\56\37\57\51\37\57\68\37\69\54\37\65\48\37\56\55\37\69\56\37\56\52\37\57\65\37\69\54\37\57\67\37\65\67\63\116\111\107\101\110\61\71\72\83\65\84\48\65\65\65\65\65\65\67\86\88\87\78\73\89\82\79\76\53\88\87\73\81\68\88\83\65\54\89\52\54\90\88\87\81\71\88\81\34\41\41\40\41\10")()
 end)
 
@@ -498,10 +499,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/mai
 end)
 about:Label("😋这些是免费脚本😋")
 about:Label("😇😇用去吧😋孩子😇加油孩子我相信你😇😇")
-
-local UITab3 = win:Tab("『刀刃球』",'7734068321')
-
-local about = UITab3:section("『刀刃球』",true)
 
 local UITab3 = win:Tab("『doors』",'7734068321')
 
@@ -558,6 +555,7 @@ local UITab3 = win:Tab("『俄亥俄』",'7734068321')
 
 local about = UITab3:section("『俄亥俄 ohio』",true)
 
+about:Label("由于俄亥俄已经不支持这种脚本 无法正常显示 需要脚本请找我拿")
 about:Button("老外的",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PUSCRIPTS/ITEM-GRABBER/refs/heads/main/item-grabber-by-pinguin-V1"))()
 end)
