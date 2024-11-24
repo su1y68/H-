@@ -598,3 +598,31 @@ end)
 about:Button("一",function()
 loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
 end)
+
+local UITab3 = win:Tab("『极速传奇』",'7734068321')
+
+local about = UITab3:section("『JS』",true)
+
+about:Button("一",function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Script%20Game"))()
+end)
+
+about:Button("二",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHublegendsofspeed"))()
+end)
+
+local UITab3 = win:Tab("『彩虹好友』",'7734068321')
+
+local about = UITab3:section("『CHHY』",true)
+
+about:Button("一",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ')
+end)
+
+local UITab3 = win:Tab("『🐟钓鱼佬』",'7734068321')
+
+local about = UITab3:section("『开钓』",true)
+
+about:Button("hub",function()
+loadstring(game:HttpGet("https://you.whimper.xyz/spectrum"))()
+end)
