@@ -64,7 +64,7 @@ local about = UITab3:section("『公告信息』",true)
 about:Label("🤗作者QQ 386884885 名suxa🤗")
 about:Label("🤓QQ群：692367787 2：885222665🤓")
 about:Label("💔世间的存在只是一个场戏罢了💔")
-about:Label("谢谢冷和小皮 冉姐的指导")
+about:Label("谢谢各位的使用")
 about:Label("每周六周日更新")
 about:Label("已制作11天")
 about:Label("一定都归LN所有")
@@ -339,6 +339,23 @@ local UITab3 = win:Tab("『娱乐用 最强战场』",'7734068321')
 local about = UITab3:section("『最强战场😶』",true)
 
 about:Label("最新动作集(持续更新ing~)")
+
+about:Button("VHS SANS",function()
+loadstring(game:HttpGet("https://paste.ee/r/rF9d3"))()
+end)
+
+about:Button("TOJI",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Giahao135/Tojifushiguro/refs/heads/main/Togiiiii"))()
+end)
+
+about:Button("MASTERY DEKU",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/xKextYP5"))()
+end)
+
+about:Button("GT-CHARA moveset",function()
+loadstring(game:HttpGet("https://paste.ee/r/0yYkO"))()
+end)
+
 about:Button("SUKUNA改饿狼",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Yourfavoriteguy/Sukuna/refs/heads/main/CLEAVE!'))()
 end)
