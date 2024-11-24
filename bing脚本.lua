@@ -62,6 +62,7 @@ local about = UITab1:section("『作者信息』",true)
 
 about:Label("付费检测")
 about:Label("您未付款 但这仍然也是你给我的动力")
+
 about:Label("你的账号年龄:"..player.AccountAge.."天")
 about:Label("你现在的服务器id:"..game.GameId)
 about:Label("你的用户ID:"..game.Players.LocalPlayer.UserId)
@@ -101,7 +102,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
 end)
 
 about:Button("工具",function()
-loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))();
 end)
 
 about:Button("爬墙改进",function()
@@ -600,10 +601,6 @@ end)
 
 about:Button("一",function()
 loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
-end)
-
-about:Button("二",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Combat-Warriors/main/Script"))()
 end)
 
 local UITab3 = win:Tab("『忍者传奇』",'7734068321')
