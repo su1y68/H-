@@ -334,7 +334,7 @@ about:Button("aimbot",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yzeedw/Mortalv2-main/main/mortal.cc/ekittens/mc%20target%20v0.3"))()
 end)
 
-local UITab3 = win:Tab("『娱乐用 最强战场』",'7734068321')
+local UITab3 = win:Tab("『娱乐最强战场』",'7734068321')
 
 local about = UITab3:section("『最强战场😶』",true)
 
@@ -490,11 +490,6 @@ local UITab3 = win:Tab("『其他脚本』",'7734068321')
 
 local about = UITab3:section("『其他脚本』",true)
 
-about:Button("【重磅嘉宾】来自本群的HT的脚本jerk中心",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/asehbzi/hacker/refs/heads/main/niggerfuck"))()
-end)
-about:Label("『由于HVT太缺钱了 所以开卖』")
-
 about:Button("鹤脚本",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/qazpin66/-/refs/heads/main/%E9%B9%A41.5.lua"))()
 end)
@@ -515,7 +510,7 @@ about:Button("皮脚本",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
 end)
 about:Label("😋这些是免费脚本😋")
-about:Label("😇😇用去吧😋孩子😇加油孩子我相信你😇😇")
+about:Label("可惜 迟早落榜")
 
 local UITab3 = win:Tab("『doors』",'7734068321')
 
@@ -537,7 +532,7 @@ local UITab3 = win:Tab("『通用2』",'7734068321')
 
 local about = UITab3:section("『通用2』",true)
 
-about:Button("hua 画质",function()
+about:Button("hua质",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/arzRCgwS"))()
 end)
 
