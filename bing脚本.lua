@@ -34,7 +34,7 @@ local function HeartbeatUpdate()
     FrameUpdateTable[1] = LastIteration
     local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
     CurrentFPS = CurrentFPS - CurrentFPS % 1
-    FpsLabel.Text = ("时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+    FpsLabel.Text = ("冷bing:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
@@ -44,11 +44,24 @@ game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『作者：
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『功能少开』"; Text ="以防止封服务"; Duration = 8; })
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/djnd/refs/heads/main/%E5%86%B7444.txt"))();        
-local win = ui:new("明bing")
+local win = ui:new("冷bing")
 --
+
+local UITab3 = win:Tab("『特别介绍』",'7734068321')
+
+local about = UITab3:section("『QQ群主』",true)
+
+about:Label("QQ群主的QQ号👇")
+about:Label("2192542644")
+about:Label("这个入非常不老实")
+about:Label("感谢@LN提供的脚本和精神损失费")
+
 local UITab1 = win:Tab("『信息』",'7734068321')
 
 local about = UITab1:section("『作者信息』",true)
+
+about:Label("付费检测")
+about:Label("您未付款 但这仍然也是你给我的动力")
 
 about:Label("你的账号年龄:"..player.AccountAge.."天")
 about:Label("你现在的服务器id:"..game.GameId)
@@ -58,6 +71,16 @@ about:Label("你的注入器:"..identifyexecutor())
 about:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
 about:Label("你现在的服务器名称:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
 
+local UITab3 = win:Tab("『更新内容』",'7734068321')
+
+local about = UITab3:section("『更新的内容如下』",true)
+about:Label("1.优化脚本兼容")
+about:Label("2.增加功能(通用)")
+about:Label("3.增加游戏脚本")
+
+about:Label("您的开通状态:")
+about:Label("检测:您并非开通 现脚本为普通模式")
+
 local UITab3 = win:Tab("『公告信息』",'7734068321')
 
 local about = UITab3:section("『公告信息』",true)
@@ -66,14 +89,30 @@ about:Label("🤓QQ群：692367787 2：885222665🤓")
 about:Label("💔世间的存在只是一个场戏罢了💔")
 about:Label("谢谢各位的使用")
 about:Label("每周六周日更新")
-about:Label("已制作11天")
+about:Label("已制作12天")
 about:Label("一定都归LN所有")
 about:Label("此脚本仅快捷缝合")
 about:Label("😡😡禁各位78们把这脚本拿来倒卖😡😡")
 
-local UITab3 = win:Tab("『通用』",'7734068321')
+local UITab3 = win:Tab("『(更新)通用』",'7734068321')
 
-local about = UITab3:section("『通用』",true)
+local about = UITab3:section("『通用功能』",true)
+
+about:Button("传送工具(需点击)",function()
+mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+about:Button("飞行v3",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
+end)
+
+about:Button("工具",function()
+loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+end)
+
+about:Button("爬墙改进",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+end)
 
 about:Button("玩家加入游戏提示",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
@@ -334,6 +373,12 @@ about:Button("aimbot",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yzeedw/Mortalv2-main/main/mortal.cc/ekittens/mc%20target%20v0.3"))()
 end)
 
+local about = UITab3:section("『改画质』",true)
+
+about:Button("改画质(可自定义调节)",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Zj4NnKs6"))()
+end)
+
 local UITab3 = win:Tab("『娱乐最强战场』",'7734068321')
 
 local about = UITab3:section("『最强战场😶』",true)
@@ -528,32 +573,6 @@ loadstring(game:HttpGet("https://github.com/DocYogurt/Main/raw/main/Scripts/DF2R
 end)
 about:Label("娱乐功能专用")
 
-local UITab3 = win:Tab("『通用2』",'7734068321')
-
-local about = UITab3:section("『通用2』",true)
-
-about:Button("hua质",function()
-loadstring(game:HttpGet("https://pastebin.com/raw/arzRCgwS"))()
-end)
-
-about:Button("画质v2",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
-end)
-
-about:Button("超高画质",function()
-loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
-end)
-
-about:Button("极致可调节画质",function()
-loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
-end)
-about:Label("以上是画质更改👆👆👆")
-about:Label("以下是通用功能👇👇👇")
-
-about:Button("改动作",function()
-loadstring(game:HttpGet("https://pastebin.com/raw/Zj4NnKs6"))()
-end)
-
 local UITab3 = win:Tab("『自然灾害』",'7734068321')
 
 local about = UITab3:section("『自然灾害』",true)
@@ -568,21 +587,6 @@ local UITab3 = win:Tab("『俄亥俄』",'7734068321')
 local about = UITab3:section("『俄亥俄 ohio』",true)
 
 about:Label("由于俄亥俄已经不支持这种脚本 无法正常显示 需要脚本请找我拿")
-about:Button("老外的",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PUSCRIPTS/ITEM-GRABBER/refs/heads/main/item-grabber-by-pinguin-V1"))()
-end)
-
-about:Button("老外的2 v5",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PUSCRIPTS/PinguinHub/refs/heads/main/V5"))()
-end)
-
-about:Button("老外的v3",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PUSCRIPTS/MOBILE-DEALER-V1/refs/heads/main/V1"))()
-end)
-
-about:Button("老外的 4",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PUSCRIPTS/C-BRING-V1/refs/heads/main/V1-PHONE"))()
-end)
 
 local UITab3 = win:Tab("『战斗战士』",'7734068321')
 
@@ -595,8 +599,43 @@ local __function = loadstring(game:HttpGet("https://github.com/Hosvile/InfiniX/r
 __function(__function)
 --```
 end)
-about:Label("👆要key  👇免费")
 
 about:Button("hvub lp",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/speedwavevip/scriptspeed/refs/heads/main/CombatWarriors_English"))()
+end)
+
+about:Button("一",function()
+loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
+end)
+
+about:Button("二",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Combat-Warriors/main/Script"))()
+end)
+
+local UITab3 = win:Tab("『忍者传奇』",'7734068321')
+
+local about = UITab3:section("『忍奇』",true)
+
+about:Button("一",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/2UjrXwTV")))
+end)
+
+local UITab3 = win:Tab("『doors&rooms』",'7734068321')
+
+local about = UITab3:section("『DMS』",true)
+
+about:Button("一",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/StupidProAArsenal/main/main/deer%20customs',true))()
+end)
+
+about:Button("二",function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+end)
+
+local UITab3 = win:Tab("『模仿者』",'7734068321')
+
+local about = UITab3:section("『MFZ』",true)
+
+about:Button("一",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/obfloadstringmainmimic/main/README.md", true))()
 end)
