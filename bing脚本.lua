@@ -62,7 +62,6 @@ local about = UITab1:section("『作者信息』",true)
 
 about:Label("付费检测")
 about:Label("您未付款 但这仍然也是你给我的动力")
-
 about:Label("你的账号年龄:"..player.AccountAge.."天")
 about:Label("你现在的服务器id:"..game.GameId)
 about:Label("你的用户ID:"..game.Players.LocalPlayer.UserId)
@@ -77,7 +76,6 @@ local about = UITab3:section("『更新的内容如下』",true)
 about:Label("1.优化脚本兼容")
 about:Label("2.增加功能(通用)")
 about:Label("3.增加游戏脚本")
-
 about:Label("您的开通状态:")
 about:Label("检测:您并非开通 现脚本为普通模式")
 
@@ -97,10 +95,6 @@ about:Label("😡😡禁各位78们把这脚本拿来倒卖😡😡")
 local UITab3 = win:Tab("『(更新)通用』",'7734068321')
 
 local about = UITab3:section("『通用功能』",true)
-
-about:Button("传送工具(需点击)",function()
-mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
-end)
 
 about:Button("飞行v3",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
