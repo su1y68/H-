@@ -101,10 +101,6 @@ about:Button("飞行v3",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
 end)
 
-about:Button("工具",function()
-loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))();
-end)
-
 about:Button("爬墙改进",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
 end)
@@ -601,32 +597,4 @@ end)
 
 about:Button("一",function()
 loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
-end)
-
-local UITab3 = win:Tab("『忍者传奇』",'7734068321')
-
-local about = UITab3:section("『忍奇』",true)
-
-about:Button("一",function()
-loadstring(game:HttpGet("https://pastebin.com/raw/2UjrXwTV")))
-end)
-
-local UITab3 = win:Tab("『doors&rooms』",'7734068321')
-
-local about = UITab3:section("『DMS』",true)
-
-about:Button("一",function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/StupidProAArsenal/main/main/deer%20customs',true))()
-end)
-
-about:Button("二",function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
-end)
-
-local UITab3 = win:Tab("『模仿者』",'7734068321')
-
-local about = UITab3:section("『MFZ』",true)
-
-about:Button("一",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/obfloadstringmainmimic/main/README.md", true))()
 end)
