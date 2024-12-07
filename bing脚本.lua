@@ -41,7 +41,7 @@ Heartbeat:Connect(HeartbeatUpdate)
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="为您加载"; Duration = 7; })
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『bing脚本』"; Text ="成功"; Duration = 8; })
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『作者：suxa 冉 冷』"; Text ="已识别全部该服务器"; Duration = 7; })
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『功能少开』"; Text ="以防止封服务"; Duration = 8; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "『功能少开』"; Text ="以防止封服务"; Duration = 9; })
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/djnd/refs/heads/main/%E5%86%B7444.txt"))();        
 local win = ui:new("冷bing")
@@ -93,9 +93,9 @@ about:Label("一定都归LN所有")
 about:Label("此脚本仅快捷缝合")
 about:Label("😡😡禁各位78们把这脚本拿来倒卖😡😡")
 
-local UITab3 = win:Tab("『(更新)通用』",'7734068321')
+local UITab3 = win:Tab("『通用』",'7734068321')
 
-local about = UITab3:section("『通用功能』",true)
+local about = UITab3:section("『功能』",true)
 
 about:Button("飞行v3",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
@@ -552,10 +552,10 @@ local UITab3 = win:Tab("『doors』",'7734068321')
 
 local about = UITab3:section("『doors』",true)
 
-about:Button("ms汉化",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XSKMS/MS-Chinese-XXZ/refs/heads/main/rename.txt"))()
+about:Button("msv3汉化",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoXuAnZang/XKscript/refs/heads/main/DOORS.txt"))()
 end)
-about:Label("目前最强就是ms")
+about:Label("bob和ms属于目前较强")
 
 local about = UITab3:section("『国人脚本』",true)
 
