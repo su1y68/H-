@@ -34,7 +34,7 @@ local function HeartbeatUpdate()
     FrameUpdateTable[1] = LastIteration
     local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
     CurrentFPS = CurrentFPS - CurrentFPS % 1
-    FpsLabel.Text = ("冷bing:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+    FpsLabel.Text = ("冷bing 北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
@@ -652,7 +652,7 @@ getgenv().ForceUseWalkSpeedModifier = false
  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
 end)
 
-local about = UITab3:section("『钓鱼佬🐟』",true)
+local about = UITab3:section("『🐟』",true)
 
 about:Button("NIPKp",function()
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2c5f110f91165707959fc626b167e036.lua"))()
@@ -673,7 +673,6 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7fe29a6a9dc2a0
 end)
 
 local about = UITab3:section("『evade』",true)
-about:Label("目前最好的evade搁这里呢")
 
 about:Button("FREE v1",function()
 pcall(loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Evade/main/Main.lua')))
@@ -689,12 +688,6 @@ about:Button("SSHZZ",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealAvrwm/Projects/main/Xeno%20MVSD%20script.lua", true))()
 end)
 
-local about = UITab3:section("『DOORS』",true)
-
-about:Button("REWORK",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
-end)
-
 local about = UITab3:section("『谋杀2』",true)
 
 about:Button("X hub",function()
@@ -704,4 +697,14 @@ for _, url in pairs({
 }) do
     loadstring(game:HttpGet(url, true))()
 		end
+end)
+
+local UITab3 = win:Tab("『拔出一把剑』",'7734068321')
+
+about:Button("BCYBJ",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/PullaSword"))()
+end)
+
+about:Button("Behub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BaconBossScript/BeeconHub/main/BeeconHub"))()
 end)
