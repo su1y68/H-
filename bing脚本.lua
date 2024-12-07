@@ -93,6 +93,14 @@ about:Label("一定都归LN所有")
 about:Label("此脚本仅快捷缝合")
 about:Label("😡😡禁各位78们把这脚本拿来倒卖😡😡")
 
+local UITab3 = win:Tab("『aimbot更新』",'7734068321')
+
+local about = UITab3:section("『自瞄aim bot』",true)
+
+about:Button("aimbot",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
+end)
+
 local UITab3 = win:Tab("『通用』",'7734068321')
 
 local about = UITab3:section("『功能』",true)
@@ -577,6 +585,10 @@ loadstring(game:HttpGet("https://pastebin.com/raw/5fKvum70"))()
 end)
 about:Label("😡通用功能够玩了😡")
 
+about:Button("RX5",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/pcallskeleton/RX/refs/heads/main/5.lua'))()
+end)
+
 local UITab3 = win:Tab("『俄亥俄』",'7734068321')
 
 local about = UITab3:section("『俄亥俄 ohio』",true)
@@ -634,6 +646,10 @@ end)
 local UITab3 = win:Tab("『游戏整合脚本』",'7734068321')
 
 local about = UITab3:section("『BF脚本』",true)
+
+about:Button("god hub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua"))()
+end)
 
 about:Button("BXF HUB",function()
 loadstring(game.HttpGet(game,'https://raw.githubusercontent.com/Yumiara/Python/refs/heads/main/BloxFruit-XYZ.lua'))()
@@ -701,10 +717,54 @@ end)
 
 local UITab3 = win:Tab("『拔出一把剑』",'7734068321')
 
+local about = UITab3:section("『拔剑』",true)
+
 about:Button("BCYBJ",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/PullaSword"))()
 end)
 
 about:Button("Behub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BaconBossScript/BeeconHub/main/BeeconHub"))()
+end)
+
+local UITab3 = win:Tab("『Booga Booga』",'7734068321')
+
+local UITab3 = win:Tab("『BBGa』",'7734068321')
+
+about:Button("slideurs HUB",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/boogauser3533/natsuloader/main/SlideursHub-Loader.lua'))()
+end)
+
+local UITab3 = win:Tab("『骗子桌子酒馆』",'7734068321')
+
+local about = UITab3:section("『说谎者的桌子』",true)
+
+about:Button("cowka hub",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cowka/c0wkaHub/refs/heads/main/Liars%20Club'))()
+end)
+
+local UITab3 = win:Tab("『速度中心』",'7734068321')
+
+local about = UITab3:section("『速度之王』",true)
+
+about:Button("speed hub x",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dekos-lgbty/petsgoupdated/refs/heads/main/autofarm"))()
+end)
+
+local UITab3 = win:Tab("『Phantom Forces』",'7734068321')
+
+local about = UITab3:section("『功能脚本』",true)
+
+about:Button("wapus",function()
+setfflag("DebugRunParallelLuaOnMainThread", "True")
+queue_on_teleport("task.wait(5);" .. game:HttpGet("https://api.luarmor.net/files/v3/loaders/9d0b678c6da300ebe2ee7ad262be4b64.lua"))
+game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId)
+end)
+
+local UITab3 = win:Tab("『Meme Sea』",'7734068321')
+
+local about = UITab3:section("『功能』",true)
+
+about:Button("OMG hub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
 end)
