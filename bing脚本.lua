@@ -569,12 +569,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoXuAnZang/XKscript
 end)
 about:Label("bob和ms属于目前较强")
 
-local about = UITab3:section("『国人脚本』",true)
-
-about:Button("人机doors",function()
-loadstring(game:HttpGet("https://github.com/DocYogurt/Main/raw/main/Scripts/DF2RW.lua"))()
+about:Button("bk x bob",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KIN..."))()
 end)
-about:Label("娱乐功能专用")
 
 local UITab3 = win:Tab("『自然灾害』",'7734068321')
 
@@ -725,14 +722,6 @@ end)
 
 about:Button("Behub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BaconBossScript/BeeconHub/main/BeeconHub"))()
-end)
-
-local UITab3 = win:Tab("『Booga Booga』",'7734068321')
-
-local UITab3 = win:Tab("『BBGa』",'7734068321')
-
-about:Button("slideurs HUB",function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/boogauser3533/natsuloader/main/SlideursHub-Loader.lua'))()
 end)
 
 local UITab3 = win:Tab("『骗子桌子酒馆』",'7734068321')
