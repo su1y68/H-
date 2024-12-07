@@ -405,6 +405,10 @@ about:Button("饿狼1+2",function()
 loadstring(game:HttpGet("https://pastefy.app/Z7DawZJB/raw"))()
 end)
 
+about:Button("TSB HP",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+end)
+
 about:Button("LAT脚本(漏洞攻击)",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
 end)
@@ -625,4 +629,79 @@ local about = UITab3:section("『开钓』",true)
 
 about:Button("hub",function()
 loadstring(game:HttpGet("https://you.whimper.xyz/spectrum"))()
+end)
+
+local UITab3 = win:Tab("『游戏整合脚本』",'7734068321')
+
+local about = UITab3:section("『BF脚本』",true)
+
+about:Button("BXF HUB",function()
+loadstring(game.HttpGet(game,'https://raw.githubusercontent.com/Yumiara/Python/refs/heads/main/BloxFruit-XYZ.lua'))()
+end)
+
+about:Button("delicate",function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao.lua")()
+end)
+
+about:Button("azure",function()
+getgenv().Team = "Marines"
+getgenv().AutoLoad = false
+getgenv().SlowLoadUi  = false
+getgenv().ForceUseSilentAimDashModifier = false
+getgenv().ForceUseWalkSpeedModifier = false
+ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+end)
+
+local about = UITab3:section("『钓鱼佬🐟』",true)
+
+about:Button("NIPKp",function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2c5f110f91165707959fc626b167e036.lua"))()
+end)
+
+about:Button("MOPL",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLevel/goombahub/main/fisch.lua"))()
+end)
+
+about:Button("Speed hub",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+end)
+
+local about = UITab3:section("『Jujutsu Shenanigans』",true)
+
+about:Button("Xenon Hub",function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7fe29a6a9dc2a08c84b8e2f0f5ef5810.lua"))()
+end)
+
+local about = UITab3:section("『evade』",true)
+about:Label("目前最好的evade搁这里呢")
+
+about:Button("FREE v1",function()
+pcall(loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Evade/main/Main.lua')))
+end)
+
+about:Button("MOPH",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/random/main/.x.vr.e.hi/loader.lua"))()
+end)
+
+local about = UITab3:section("『杀手与警长』",true)
+
+about:Button("SSHZZ",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealAvrwm/Projects/main/Xeno%20MVSD%20script.lua", true))()
+end)
+
+local about = UITab3:section("『DOORS』",true)
+
+about:Button("REWORK",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
+end)
+
+local about = UITab3:section("『谋杀2』",true)
+
+about:Button("X hub",function()
+for _, url in pairs({
+    "https://raw.githubusercontent.com/Dekos-lgbty/halloweens/refs/heads/main/autofarms",
+    "https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"
+}) do
+    loadstring(game:HttpGet(url, true))()
+		end
 end)
