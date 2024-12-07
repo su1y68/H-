@@ -36,7 +36,7 @@ local function HeartbeatUpdate()
     CurrentFPS = CurrentFPS - CurrentFPS % 1
     FpsLabel.Text = ("冷bing 北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
-FrameUpdateTable[2] = LastIteration
+FrameUpdateTable[1] = LastIteration
     local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
     CurrentFPS = CurrentFPS - CurrentFPS % 1
     FpsLabel.Text = ("冷bing的世界可悲可叹")
