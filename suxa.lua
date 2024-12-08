@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "冷bing 动作集tsb",
+   Name = "冷bing(改版)",
    LoadingTitle = "只是一场罪过罢了",
    LoadingSubtitle = "by suxa",
    ConfigurationSaving = {
@@ -47,5 +47,14 @@ local Button = MainTab:CreateButton({
    Name = "LAT漏洞攻击",
    Callback = function()
          loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
+   end,
+})
+
+local MainTab = Window:CreateTab("Doors", nil) -- Title, Image
+
+local Button = MainTab:CreateButton({
+   Name = "妈了个巴子",
+   Callback = function()
+         
    end,
 })
