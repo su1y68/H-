@@ -9,15 +9,6 @@ OrionLib:MakeNotification({
     Time = 9
 })
 
-local about = Window:MakeTab({
-    Name = "suxa制作",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = true
-})
-
-about:AddParagraph("脚本为免费脚本 请勿去圈钱")
-about:AddParagraph("禁止倒卖")
-
 local Tab =Window:MakeTab({
 	Name = "公告",
 	Icon = "rbxassetid://4483345998",
