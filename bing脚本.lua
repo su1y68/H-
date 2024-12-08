@@ -757,3 +757,11 @@ local about = UITab3:section("『功能』",true)
 about:Button("OMG hub",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
 end)
+
+local UITab3 = win:Tab("『犯罪』",'7734068321')
+
+local about = UITab3:section("『犯罪脚本』",true)
+
+about:Button("crim",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/taKWxmZe'))()
+end)
