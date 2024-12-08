@@ -29,9 +29,7 @@ local Window = Rayfield:CreateWindow({
 local MainTab = Window:CreateTab("玩家信息", nil) -- Title, Image
 
 local MainSection = MainTab:CreateSection("服务器👇")
-local MainSection = MainTab:CreateSection("你的用户名:"," "..game.Players.LocalPlayer.Name.."")
-local MainSection = MainTab:CreateSection("你的注入器:"," "..identifyexecutor().."")
-local MainSection = MainTab:CreateSection("你所在的服务器ID"," "..game.GameId.."")
+local MainSection = MainTab:CreateSection("你现在的服务器名称:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
 Rayfield:Notify({
    Title = "冷bing启动",
    Content = "明知不能在一起 却还要假装...",
@@ -51,5 +49,44 @@ local Button = MainTab:CreateButton({
    Name = "勿点",
    Callback = function()
         
+   end,
+})
+
+local MainTab = Window:CreateTab("TSB Q群动作集", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("此动作集是q群内有的")
+
+local Button = MainTab:CreateButton({
+   Name = "第1期",
+   Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Doumaix/qqwrxxxx/main/gojo_v2.4.lua"))()  
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "第14期",
+   Callback = function()
+         getgenv().morph = false -- turn false to true if you want custom accessories
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/refs/heads/main/LatestV2.lua"))()        
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "第13期",
+   Callback = function()
+         loadstring(game:HttpGet("https://pastebin.com/raw/eEDYWj8p"))()   
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "第12期",
+   Callback = function()
+         loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy/refs/heads/main/GUI")(        
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "第三期",
+   Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/main/Kyra%20Gojo%20Tsb%20Bypassed"))()
    end,
 })
