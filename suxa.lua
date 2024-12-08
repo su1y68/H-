@@ -29,7 +29,7 @@ local Window = Rayfield:CreateWindow({
 local MainTab = Window:CreateTab("TSB🤒", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("攻击类👇")
 Rayfield:Notify({
-   Title = "Script Executed",
+   Title = "冷bing启动",
    Content = "明知不能在一起 却还要假装...",
    Duration = 9,
    Image = nil,
@@ -50,8 +50,15 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local MainTab = Window:CreateTab("玩家信息", nil) -- Title, Image
+local MainTab = Window:CreateTab("玩家信息和通用", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("你的账号年龄:"..player.AccountAge.."天")
 local MainSection = MainTab:CreateSection("你现在的服务器id:"..game.GameId)
 local MainSection = MainTab:CreateSection("你的注入器:"..identifyexecutor())
 local MainSection = MainTab:CreateSection("你的用户名:"..game.Players.LocalPlayer.Character.Name)
+
+local Button = MainTab:CreateButton({
+   Name = "飞行v3",
+   Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
+   end,
+})
