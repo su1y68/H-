@@ -10,6 +10,9 @@ local Window = Rayfield:CreateWindow({
       FileName = "ROBLOX script"
    },
 
+local MainTab = Window:CreateTab("作者信息", nil) -- Title, Image
+local MainSection = MainTab:("你的账号年龄:"..player.AccountAge.."天")
+
 local MainTab = Window:CreateTab("TSB", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("下面是攻击类")
 Rayfield:Notify({
