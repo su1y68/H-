@@ -32,8 +32,6 @@ local MainSection = MainTab:CreateSection("服务器👇")
 local MainSection = MainTab:CreateSection("你的用户名:"," "..game.Players.LocalPlayer.Name.."")
 local MainSection = MainTab:CreateSection("你的注入器:"," "..identifyexecutor().."")
 local MainSection = MainTab:CreateSection("你所在的服务器ID"," "..game.GameId.."")
-     end
-})
 Rayfield:Notify({
    Title = "冷bing启动",
    Content = "明知不能在一起 却还要假装...",
