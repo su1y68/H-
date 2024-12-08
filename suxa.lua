@@ -63,14 +63,6 @@ local Button = MainTab:CreateButton({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "第14期",
-   Callback = function()
-         getgenv().morph = false -- turn false to true if you want custom accessories
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/refs/heads/main/LatestV2.lua"))()        
-   end,
-})
-
-local Button = MainTab:CreateButton({
    Name = "第13期",
    Callback = function()
          loadstring(game:HttpGet("https://pastebin.com/raw/eEDYWj8p"))()   
@@ -87,6 +79,6 @@ local Button = MainTab:CreateButton({
 local Button = MainTab:CreateButton({
    Name = "第三期",
    Callback = function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/main/Kyra%20Gojo%20Tsb%20Bypassed"))()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/main/Kyra%20Gojo%20Tsb%20Bypassed"))()
    end,
 })
