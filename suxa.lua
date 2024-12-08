@@ -2,8 +2,8 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "👹 Nixks Criminality Hub 👹",
-   LoadingTitle = "Nixks Hub",
-   LoadingSubtitle = "by Nixks",
+   LoadingTitle = "suxa",
+   LoadingSubtitle = "by suxa",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
