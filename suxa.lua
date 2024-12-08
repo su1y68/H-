@@ -11,7 +11,8 @@ local Window = Rayfield:CreateWindow({
    },
 
 local MainTab = Window:CreateTab("信息", nil) -- Title, Image
-local MainSection = MainTab:("你的账号年龄:"..player.AccountAge.."天")
+local MainSection = MainTab:CreateSection("你的账号年龄:"..player.AccountAge.."天")
+local MainSection = MainTab:CreateSection("你现在的服务器id:"..game.GameId)
 
 local MainTab = Window:CreateTab("TSB", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("下面是攻击类")
