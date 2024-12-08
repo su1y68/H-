@@ -570,7 +570,7 @@ end)
 about:Label("bob和ms属于目前较强")
 
 about:Button("bk x bob",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/KIN..."))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
 end)
 
 local UITab3 = win:Tab("『自然灾害』",'7734068321')
