@@ -26,8 +26,15 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local MainTab = Window:CreateTab("TSB🤒", nil) -- Title, Image
-local MainSection = MainTab:CreateSection("攻击类👇")
+local MainTab = Window:CreateTab("玩家信息", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("服务器👇")
+local MainSection = MainTab:CreateSection("你现在的服务器id:"..game.GameId)
+local MainSection = MainTab:CreateSection("你的账号年龄:"..player.AccountAge.."天")
+local MainSection = MainTab:CreateSection("你的用户ID:"..game.Players.LocalPlayer.UserId)
+local MainSection = MainTab:CreateSection("获取客户端ID:"..game:GetService("RbxAnalyticsService"):GetClientId())
+local MainSection = MainTab:CreateSection("你的注入器:"..identifyexecutor())
+local MainSection = MainTab:CreateSection("你现在的服务器名称:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
+local MainSection = MainTab:CreateSection("你的用户名:"..game.Players.LocalPlayer.Character.Name)
 Rayfield:Notify({
    Title = "冷bing启动",
    Content = "明知不能在一起 却还要假装...",
@@ -44,21 +51,8 @@ Rayfield:Notify({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Aimbot",
+   Name = "勿点",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Raw%20Main.lua"))()
-   end,
-})
-
-local MainTab = Window:CreateTab("玩家信息和通用", nil) -- Title, Image
-local MainSection = MainTab:CreateSection("你的账号年龄:"..player.AccountAge.."天")
-local MainSection = MainTab:CreateSection("你现在的服务器id:"..game.GameId)
-local MainSection = MainTab:CreateSection("你的注入器:"..identifyexecutor())
-local MainSection = MainTab:CreateSection("你的用户名:"..game.Players.LocalPlayer.Character.Name)
-
-local Button = MainTab:CreateButton({
-   Name = "飞行v3",
-   Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/gqv7PXAa"))()
+        
    end,
 })
