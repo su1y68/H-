@@ -9,8 +9,6 @@ local Window = Rayfield:CreateWindow({
       FolderName = nil, -- Create a custom folder for your hub/game
       FileName = "ROBLOX script"
    },
-local MainTab = Window:CreateTab("信息", nil) -- Title, Image
-
 local MainTab = Window:CreateTab("TSB", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("下面是攻击类")
 Rayfield:Notify({
