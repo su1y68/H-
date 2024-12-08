@@ -30,8 +30,8 @@ local MainTab = Window:CreateTab("TSB", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Main")
 Rayfield:Notify({
    Title = "Script Executed",
-   Content = "Best Criminality Hub",
-   Duration = 5,
+   Content = "如果不能再回去 为何还要认识?😔",
+   Duration = 9,
    Image = nil,
    Actions = { -- Notification Buttons
       Ignore = {
