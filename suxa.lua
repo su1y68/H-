@@ -27,7 +27,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 local MainTab = Window:CreateTab("TSB🤒", nil) -- Title, Image
-local MainSection = MainTab:CreateSection("Main")
+local MainSection = MainTab:CreateSection("你现在的服务器id:"..game.GameId)
 Rayfield:Notify({
    Title = "Script Executed",
    Content = "明知不能在一起 却还要假装...",
