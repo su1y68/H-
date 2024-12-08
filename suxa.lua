@@ -29,7 +29,7 @@ local Window = Rayfield:CreateWindow({
 local MainTab = Window:CreateTab("玩家信息", nil) -- Title, Image
 
 local MainSection = MainTab:CreateSection("服务器👇")
-local MainSection = MainTab:CreateSection("你现在的服务器名称:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
+local MainSection = MainTab:CreateSection("Q群内@suxa 提供服务器名称会加上去的哦🤒")
 Rayfield:Notify({
    Title = "冷bing启动",
    Content = "明知不能在一起 却还要假装...",
