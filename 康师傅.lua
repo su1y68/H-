@@ -1,18 +1,18 @@
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/jrdKakD6"))()
 
-local Window = OrionLib:MakeWindow({Name = "康师傅脚本", HidePremium = false, SaveConfig = false, IntroText = "注入器："..identifyexecutor(), ConfigFolder = "康师傅脚本"})
+local Window = OrionLib:MakeWindow({Name = "冷bing脚本", HidePremium = false, SaveConfig = false, IntroText = "注入器："..identifyexecutor(), ConfigFolder = "冷bing脚本"})
 
 OrionLib:MakeNotification({
-    Name = "空",
-    Content = "作者:空",
+    Name = "冷bing",
+    Content = "作者:suxa",
     Image = "rbxassetid://630235992",
-    Time = 6
+    Time = 9
 })
 
 local about = Window:MakeTab({
-    Name = "空制作",
+    Name = "suxa制作",
     Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
+    PremiumOnly = true
 })
 
 about:AddParagraph("脚本为免费脚本 请勿去圈钱")
@@ -21,7 +21,7 @@ about:AddParagraph("禁止倒卖")
 local Tab =Window:MakeTab({
 	Name = "公告",
 	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+	PremiumOnly = true
 })
 
 Tab:AddButton({
