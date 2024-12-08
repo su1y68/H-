@@ -44,8 +44,8 @@ Rayfield:Notify({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "",
+   Name = "LAT漏洞攻击",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Raw%20Main.lua"))()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
    end,
 })
