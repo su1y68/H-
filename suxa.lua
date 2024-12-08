@@ -1,8 +1,8 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "👹 Nixks Criminality Hub 👹",
-   LoadingTitle = "suxa",
+   Name = "冷bing 动作集tsb",
+   LoadingTitle = "只是一场罪过罢了",
    LoadingSubtitle = "by suxa",
    ConfigurationSaving = {
       Enabled = true,
@@ -26,7 +26,7 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local MainTab = Window:CreateTab("🏠 Home", nil) -- Title, Image
+local MainTab = Window:CreateTab("tsb", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Main")
 Rayfield:Notify({
    Title = "Script Executed",
@@ -44,7 +44,7 @@ Rayfield:Notify({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Aimbot",
+   Name = "",
    Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Raw%20Main.lua"))()
    end,
