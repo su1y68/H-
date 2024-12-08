@@ -9,10 +9,7 @@ local Window = Rayfield:CreateWindow({
       FolderName = nil, -- Create a custom folder for your hub/game
       FileName = "ROBLOX script"
    },
-
 local MainTab = Window:CreateTab("信息", nil) -- Title, Image
-local MainSection = MainTab:CreateSection("你的账号年龄:"..player.AccountAge.."天")
-local MainSection = MainTab:CreateSection("你现在的服务器id:"..game.GameId)
 
 local MainTab = Window:CreateTab("TSB", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("下面是攻击类")
@@ -35,14 +32,5 @@ local Button = MainTab:CreateButton({
    Name = "LAT漏洞攻击",
    Callback = function()
          loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
-   end,
-})
-
-local MainTab = Window:CreateTab("Doors", nil) -- Title, Image
-
-local Button = MainTab:CreateButton({
-   Name = "妈了个巴子",
-   Callback = function()
-         
    end,
 })
