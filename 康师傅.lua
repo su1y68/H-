@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/jrdKakD6"))()
 
-local Window = OrionLib:MakeWindow({Name = "冷bing脚本", HidePremium = false, SaveConfig = false, IntroText = "注入器："..identifyexecutor(), ConfigFolder = "冷bing脚本"})
+local Window = OrionLib:MakeWindow({Name = "冷bing脚本", HidePremium = true, SaveConfig = true, IntroText = "注入器："..identifyexecutor(), ConfigFolder = "冷bing脚本"})
 
 OrionLib:MakeNotification({
     Name = "冷bing",
