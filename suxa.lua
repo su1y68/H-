@@ -54,31 +54,30 @@ local Button = MainTab:CreateButton({
 
 local MainTab = Window:CreateTab("TSB Q群动作集", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("此动作集是q群内有的")
-
 local Button = MainTab:CreateButton({
    Name = "第1期",
    Callback = function()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/Doumaix/qqwrxxxx/main/gojo_v2.4.lua"))()  
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Doumaix/qqwrxxxx/main/gojo_v2.4.lua"))()  
    end,
 })
 
 local Button = MainTab:CreateButton({
    Name = "第13期",
    Callback = function()
-         loadstring(game:HttpGet("https://pastebin.com/raw/eEDYWj8p"))()   
+loadstring(game:HttpGet("https://pastebin.com/raw/eEDYWj8p"))()   
    end,
 })
 
 local Button = MainTab:CreateButton({
    Name = "第12期",
    Callback = function()
-         loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy/refs/heads/main/GUI")(        
+loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy/refs/heads/main/GUI")(        
    end,
 })
 
 local Button = MainTab:CreateButton({
    Name = "第三期",
    Callback = function()
-         loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/main/Kyra%20Gojo%20Tsb%20Bypassed"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/main/Kyra%20Gojo%20Tsb%20Bypassed"))()
    end,
 })
