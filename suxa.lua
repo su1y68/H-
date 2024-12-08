@@ -27,7 +27,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 local MainTab = Window:CreateTab("TSB🤒", nil) -- Title, Image
-local MainSection = MainTab:CreateSection("你现在的服务器id:"..game.GameId)
+local MainSection = MainTab:CreateSection("攻击类👇")
 Rayfield:Notify({
    Title = "Script Executed",
    Content = "明知不能在一起 却还要假装...",
@@ -49,3 +49,9 @@ local Button = MainTab:CreateButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Raw%20Main.lua"))()
    end,
 })
+
+local MainTab = Window:CreateTab("玩家信息", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("你的账号年龄:"..player.AccountAge.."天")
+local MainSection = MainTab:CreateSection("你现在的服务器id:"..game.GameId)
+local MainSection = MainTab:CreateSection("你的注入器:"..identifyexecutor())
+local MainSection = MainTab:CreateSection("你的用户名:"..game.Players.LocalPlayer.Character.Name)
