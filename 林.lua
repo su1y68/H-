@@ -22,32 +22,6 @@ LBL.TextSize = 14
 LBL.TextWrapped = true
 LBL.Visible = true
 
-local function makeDraggable(uiObject)
-    local dragging = false
-    local touchPos, framePos
-
-    uiObject.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.Touch then
-            dragging = true
-            touchPos = input.Position
-            framePos = uiObject.Position
-        end
-    end)
-
-    uiObject.InputEnded:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.Touch then
-            dragging = false
-        end
-    end)
-
-    game:GetService("UserInputService").InputChanged:Connect(function(input)
-        if dragging and input.UserInputType == Enum.UserInputType.Touch then
-            local delta = input.Position - touchPos
-            uiObject.Position = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
-        end
-    end)
-end)
-
 local FpsLabel = LBL
 local Heartbeat = game:GetService("RunService").Heartbeat
 local LastIteration, Start
@@ -61,7 +35,7 @@ local function HeartbeatUpdate()
 	FrameUpdateTable[1] = LastIteration
 	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
 	CurrentFPS = CurrentFPS - CurrentFPS % 1
-	FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+	FpsLabel.Text = ("bing脚本 时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
