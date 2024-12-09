@@ -23,20 +23,18 @@ LBL.TextWrapped = true
 LBL.Visible = true
 
 local function makeDraggable(uiObject)
-    local dragging = false
+    local dragging = true
     local dragInput, mousePos, framePos
-
-    uiObject.InputBegan:Connect(function(input)
+	uiObject.InputBegan:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton1 then
             dragging = true
             mousePos = input.Position
             framePos = uiObject.Position
         end
     end)
-
-    uiObject.InputEnded:Connect(function(input)
+	uiObject.InputEnded:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton1 then
-            dragging = false
+            dragging = true
         end
     end)
 
@@ -47,9 +45,7 @@ local function makeDraggable(uiObject)
         end
     end)
 end
-
-makeDraggable(Window)
-
+)
 local FpsLabel = LBL
 local Heartbeat = game:GetService("RunService").Heartbeat
 local LastIteration, Start
