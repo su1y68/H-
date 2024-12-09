@@ -46,9 +46,7 @@ local function makeDraggable(uiObject)
             uiObject.Position = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
         end
     end)
-end
-
-makeDraggable(Window)
+end)
 
 local FpsLabel = LBL
 local Heartbeat = game:GetService("RunService").Heartbeat
