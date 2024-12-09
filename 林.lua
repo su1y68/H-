@@ -48,13 +48,10 @@ local about = Window:MakeTab({
     PremiumOnly = true
 })
 
-about:AddParagraph("更新什么我也不知道")
-about:AddParagraph("作者:林天帝 3203808510")
-about:AddParagraph("qq群聊:759054392")
-about:AddParagraph("请不要骂我")
-about:AddParagraph("😋😋😋")
-about:AddParagraph("😨😨😨😨😨")
-about:AddParagraph("🙉🐵🙃")
+Tab:AddParagraph("suxa制作")
+Tab:AddParagraph("给我加群懂没懂？")
+Tab:AddParagraph("作者QQ:386884885")
+Tab:AddParagraph("云端更新")
 
 local Tab =Window:MakeTab({
 	Name = "公告",
@@ -80,7 +77,7 @@ OrionLib:MakeNotification({
 	Name = "bing🧊脚本",
 	Content = "只是一场罪过而已",
 	Image = "rbxassetid://51812595",
-	Time = 7
+	Time = 10
 
 })
 
