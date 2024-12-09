@@ -71,6 +71,6 @@ local Section = Tab:CreateSection("更简洁的TSB动作集UI分类")
 local Button = Tab:CreateButton({
    Name = "TSB动作集(by suxa)",
    Callback = function()
-   
+loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E5%86%B7bing.lua"))()
    end,
 })
