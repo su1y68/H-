@@ -1,4 +1,5 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local player = game.Players.LocalPlayer
 
 local Window = Rayfield:CreateWindow({
     Name = "冷bing🧊",
@@ -76,15 +77,4 @@ local Button = Tab:CreateButton({
 })
 
 local Tab = Window:CreateTab("玩家信息类", 4483362458) -- Title, Image
-
-local player = game.Players.LocalPlayer
-local Label = Section:CreateLabel({
-    Name = "玩家名称",
-    Text = "当前玩家名称: " .. player.Name
-})
-
-local serverName = game.JobId or game.PlaceId
-local Label = Section:CreateLabel({
-    Name = "服务器名称",
-    Text = "当前服务器名称: " .. serverName
-})
+local Section = Tab:CreateSection("当前玩家名称: " .. player.Name")
