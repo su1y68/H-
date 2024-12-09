@@ -45,18 +45,18 @@ game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "启动中"; 
 local about = Window:MakeTab({
     Name = "suxa制作",
     Icon = "rbxassetid://51812595",
-    PremiumOnly = true
+    PremiumOnly = false
 })
 
-Tab:AddParagraph("suxa制作")
-Tab:AddParagraph("给我加群懂没懂？")
-Tab:AddParagraph("作者QQ:386884885")
-Tab:AddParagraph("云端更新")
+about:AddParagraph("suxa制作")
+about:AddParagraph("给我加群懂没懂？")
+about:AddParagraph("作者QQ:386884885")
+about:AddParagraph("云端更新")
 
 local Tab =Window:MakeTab({
 	Name = "公告",
 	Icon = "rbxassetid://51812595",
-	PremiumOnly = true
+	PremiumOnly = false
 })
 
 Tab:AddButton({
