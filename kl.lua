@@ -63,3 +63,14 @@ local Window = Rayfield:CreateWindow({
      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
     end,
  })
+
+local Tab = Window:CreateTab("TSB(会覆盖)", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("更简洁的TSB动作集UI分类")
+
+local Button = Tab:CreateButton({
+   Name = "TSB动作集(by suxa)",
+   Callback = function()
+   
+   end,
+})
