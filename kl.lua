@@ -26,6 +26,38 @@ local Window = Rayfield:CreateWindow({
     }
  })
 
+ local PlayerInfoTab = Window:CreateTab("玩家信息", 4483362458) -- Title, Image
+
+ local PlayerInfoSection = PlayerInfoTab:CreateSection("玩家信息")
+
+ local player = game.Players.LocalPlayer
+
+ local PlayerNameLabel = PlayerInfoSection:CreateLabel({
+    Name = "玩家名称",
+    Text = "玩家名称: " .. player.Name
+})
+
+ local PlayerUserIdLabel = PlayerInfoSection:CreateLabel({
+    Name = "玩家用户ID",
+    Text = "玩家用户ID: " .. player.UserId
+})
+
+ local PlayerJoinTimeLabel = PlayerInfoSection:CreateLabel({
+    Name = "玩家加入时间",
+    Text = "玩家加入时间: " .. player.AccountAge .. " 天"
+})
+
+ local ServerInfoTab = Window:CreateTab("服务器信息", 4483362458) -- Title, Image
+
+ local ServerInfoSection = ServerInfoTab:CreateSection("服务器信息")
+
+ local serverId = game.JobId
+
+ local ServerIdLabel = ServerInfoSection:CreateLabel({
+    Name = "服务器 ID",
+    Text = "当前服务器 ID: " .. serverId
+})
+
  local PlayerTab = Window:CreateTab("Player", 4483362458) -- Title, Image
 
  local Slider = PlayerTab:CreateSlider({
@@ -73,38 +105,6 @@ local Button = Tab:CreateButton({
    Callback = function()
    
    end,
-})
-
-local Tab = Window:CreateTab("玩家信息类", 4483362458) -- Title, Image
-
-local PlayerInfoSection = PlayerInfoTab:CreateSection("玩家信息")
-
-local player = game.Players.LocalPlayer
-
-local PlayerNameLabel = PlayerInfoSection:CreateLabel({
-    Name = "玩家名称",
-    Text = "玩家名称: " .. player.Name
-})
-
-local PlayerUserIdLabel = PlayerInfoSection:CreateLabel({
-    Name = "玩家用户ID",
-    Text = "玩家用户ID: " .. player.UserId
-})
-
-local PlayerJoinTimeLabel = PlayerInfoSection:CreateLabel({
-    Name = "玩家加入时间",
-    Text = "玩家加入时间: " .. player.AccountAge .. " 天"
-})
-
-local ServerInfoTab = Window:CreateTab("服务器信息", 4483362458) -- Title, Image
-
-local ServerInfoSection = ServerInfoTab:CreateSection("服务器信息")
-
-local serverId = game.JobId
-
-local ServerIdLabel = ServerInfoSection:CreateLabel({
-    Name = "服务器 ID",
-    Text = "当前服务器 ID: " .. serverId
 })
 
 Rayfield:Init()
