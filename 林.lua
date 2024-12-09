@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/refs/heads/main/source.lua')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -39,12 +39,12 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local Window = OrionLib:MakeWindow({Name = "林脚本", HidePremium = false, SaveConfig = true,IntroText = "林脚本", ConfigFolder = "林脚本"})
+local Window = OrionLib:MakeWindow({Name = "冷bing🧊", HidePremium = false, SaveConfig = true,IntroText = "🧊bing脚本", ConfigFolder = "冷bing"})
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "林脚本"; Text ="林天帝nb"; Duration = 4; })
 
 local about = Window:MakeTab({
-    Name = "林制作",
-    Icon = "rbxassetid://15613380753",
+    Name = "suxa制作",
+    Icon = "rbxassetid://51812595",
     PremiumOnly = true
 })
 about:AddParagraph("云端更新")
@@ -58,28 +58,28 @@ about:AddParagraph("🙉🐵🙃")
 
 local Tab =Window:MakeTab({
 	Name = "公告",
-	Icon = "rbxassetid://15613380753",
+	Icon = "rbxassetid://51812595",
 	PremiumOnly = true
 })
 
 Tab:AddButton({
 	Name = "复制作者QQ",
 	Callback = function()
-     setclipboard("3203808510😋")
+     setclipboard("386884885😋")
   	end
 })
 
 Tab:AddButton({
 	Name = "复制QQ群",
 	Callback = function()
-     setclipboard("759054392")
+     setclipboard("???没了")
   	end
 })
 
 OrionLib:MakeNotification({
-	Name = "林脚本",
+	Name = "bing",
 	Content = "欢迎使用",
-	Image = "rbxassetid://15613380753",
+	Image = "rbxassetid://51812595",
 	Time = 7
 
 })
@@ -88,7 +88,7 @@ local Tab = Window:MakeTab({
 
     Name = "玩家",
 
-    Icon = "rbxassetid://15613380753",
+    Icon = "rbxassetid://51812595",
 
     PremiumOnly = false
 
