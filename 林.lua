@@ -40,7 +40,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local Window = OrionLib:MakeWindow({Name = "冷bing🧊", HidePremium = false, SaveConfig = true,IntroText = "🧊bing脚本", ConfigFolder = "冷bing"})
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "启动中"; Text ="已帮您开启反挂机"; Duration = 6; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "启动中"; Text ="已帮您开启反挂机"; Duration = 7; })
 
 local about = Window:MakeTab({
     Name = "suxa制作",
@@ -77,7 +77,7 @@ OrionLib:MakeNotification({
 	Name = "bing🧊脚本",
 	Content = "只是一场罪过而已",
 	Image = "rbxassetid://51812595",
-	Time = 10
+	Time = 8
 
 })
 
