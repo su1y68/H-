@@ -48,7 +48,6 @@ local about = Window:MakeTab({
     PremiumOnly = true
 })
 
-Tab:AddLabel("作者suxa")
 about:AddParagraph("更新什么我也不知道")
 about:AddParagraph("作者:林天帝 3203808510")
 about:AddParagraph("qq群聊:759054392")
