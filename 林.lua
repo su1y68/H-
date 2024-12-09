@@ -40,14 +40,15 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local Window = OrionLib:MakeWindow({Name = "冷bing🧊", HidePremium = false, SaveConfig = true,IntroText = "🧊bing脚本", ConfigFolder = "冷bing"})
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "林脚本"; Text ="林天帝nb"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "启动中"; Text ="已帮您开启反挂机"; Duration = 6; })
 
 local about = Window:MakeTab({
     Name = "suxa制作",
     Icon = "rbxassetid://51812595",
     PremiumOnly = true
 })
-about:AddParagraph("云端更新")
+
+Tab:AddLabel("作者suxa")
 about:AddParagraph("更新什么我也不知道")
 about:AddParagraph("作者:林天帝 3203808510")
 about:AddParagraph("qq群聊:759054392")
@@ -77,8 +78,8 @@ Tab:AddButton({
 })
 
 OrionLib:MakeNotification({
-	Name = "bing",
-	Content = "欢迎使用",
+	Name = "bing🧊脚本",
+	Content = "只是一场罪过而已",
 	Image = "rbxassetid://51812595",
 	Time = 7
 
