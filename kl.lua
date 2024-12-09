@@ -78,12 +78,12 @@ local Button = Tab:CreateButton({
 local Tab = Window:CreateTab("玩家信息类", 4483362458) -- Title, Image
 
 local player = game.Players.LocalPlayer
-local serverName = game.JobId or game.PlaceId
 local Label = Section:CreateLabel({
     Name = "玩家名称",
     Text = "当前玩家名称: " .. player.Name
 })
 
+local serverName = game.JobId or game.PlaceId
 local Label = Section:CreateLabel({
     Name = "服务器名称",
     Text = "当前服务器名称: " .. serverName
