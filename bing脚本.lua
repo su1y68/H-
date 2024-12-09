@@ -48,7 +48,7 @@ local UITab1 = win:Tab("『信息』",'7734068321')
 
 local about = UITab1:section("『作者信息』",请自己更改)
 
-about:Label("bing脚本")
+about:Label("bing🧊脚本")
 about:Label("作者QQ：386884885")
 about:Label("QQ群：692367787")
 about:Label("QQ2群:885222665")
@@ -68,7 +68,7 @@ about:Label("你现在的服务器名称:"..game:GetService("MarketplaceService"
 
 local UITab3 = win:Tab("『通用』",'7734068321')
 
-local about = UITab3:section("『通用』",true)
+local about = UITab3:section("『功能』",true)
 
 about:Button("玩家加入游戏提示",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
@@ -246,10 +246,6 @@ about:Button("工具挂",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
 end)
 
-about:Button("铁拳",function()
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'))()
-end)
-
 about:Toggle("ESP 显示名字", "AMG", ENABLED, function(enabled)
     if enabled then ENABLED = true for _, player in ipairs(Players:GetPlayers()) do onPlayerAdded(player) end Players.PlayerAdded:Connect(onPlayerAdded) Players.PlayerRemoving:Connect(onPlayerRemoving) local localPlayer = Players.LocalPlayer if localPlayer and localPlayer.Character then for _, player in ipairs(Players:GetPlayers()) do if player.Character then createNameLabel(player) end end end RunService.Heartbeat:Connect(function() if ENABLED then for _, player in ipairs(Players:GetPlayers()) do if player.Character then createNameLabel(player) end end end end) else ENABLED = false for _, player in ipairs(Players:GetPlayers()) do onPlayerRemoving(player) end RunService:UnbindFromRenderStep("move") end
 end)
@@ -299,4 +295,12 @@ about:Toggle("Circle ESP", "ESP", false, function(state)
 
 about:Button("透",function()
 loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
+end)
+
+local UITab3 = win:Tab("『TSB最强』",'7734068321')
+
+local about = UITab3:section("『UI分类 by suxa』",true)
+
+about:Button("必点",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E5%86%B7bing.lua"))()  
 end)
