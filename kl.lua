@@ -106,3 +106,5 @@ local ServerIdLabel = ServerInfoSection:CreateLabel({
     Name = "服务器 ID",
     Text = "当前服务器 ID: " .. serverId
 })
+
+Rayfield:Init()
