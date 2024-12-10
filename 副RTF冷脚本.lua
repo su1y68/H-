@@ -4,6 +4,7 @@ local Window = Rayfield:CreateWindow({
    Name = "冷tsb中心🧊",
    LoadingTitle = "bing",
    LoadingSubtitle = "by suxa",
+   Image = "rbxassetid://1818",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
@@ -26,8 +27,8 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("饿狼", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("动作集类", 4483362458) -- Title, Image
 
-
+local Tab = Window:CreateTab("攻击类", 4483362458) -- Title, Image
 
 Rayfield:LoadConfiguration()
