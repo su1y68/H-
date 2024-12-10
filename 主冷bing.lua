@@ -33,7 +33,7 @@ local Button = Tab:CreateButton({
    Info = "动作集脚本",
    Interact = 'Changable',
    Callback = function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E5%89%AFRTF%E5%86%B7%E8%84%9A%E6%9C%AC.lua"))()
    end,
 })
 
