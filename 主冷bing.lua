@@ -51,4 +51,104 @@ Rayfield:Notify({
    Image = 4483362458,
 })
 
+local Tab = Window:CreateTab("通用", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "爬墙",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "改动作",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Zj4NnKs6"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "键盘(非常有用)",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "空气行走(俯视凡人们)",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+   end,
+})
+
+local Label = Tab:CreateLabel("持续更新ing",SectionParent)
+
+local Tab = Window:CreateTab("玩家类修改", 4483362458) -- Title, Image
+
+local Label = Tab:CreateLabel("也是持续更新中",SectionParent)
+
+local Button = Tab:CreateButton({
+   Name = "无限跳",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "o～好爽啊",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/minecrafttotem/yzhs./main/Fe%20pp%20script%20very%20fun"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "穿墙(无法关闭)",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/jvyN5hT8"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "玩家进入优化提示",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "点击传送",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()
+   end,
+})
+
+local Label = Tab:CreateLabel("等周六开更 更多服务器",SectionParent)
+
 Rayfield:LoadConfiguration()
