@@ -43,4 +43,15 @@ local Tab = Window:CreateTab("动作集类", 4483362458) -- Title, Image
 
 local Tab = Window:CreateTab("攻击类", 4483362458) -- Title, Image
 
+local Tab = Window:CreateTab("返回原bing🧊中心", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "点击返回",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E4%B8%BB%E5%86%B7bing.lua"))()
+   end,
+})
+
 Rayfield:LoadConfiguration()
