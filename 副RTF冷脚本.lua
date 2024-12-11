@@ -31,11 +31,11 @@ local Window = Rayfield:CreateWindow({
    KeySettings = {
       Title = "冷bing tsb动作集",
       Subtitle = "Key 系统",
-      Note = "请加入QQ群主",
+      Note = "请加入QQ群主:885222665",
       FileName = "SiriusKey",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = "suxa NB"
+      Key = "suxanb1"
    }
 })
 
