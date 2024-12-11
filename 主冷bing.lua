@@ -53,6 +53,21 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/
 })
 
 Rayfield:Notify({
+	Title = "服务器",
+	Content = "由于脚本较少，需你提供服务器或脚本来🤗",
+	Duration = 9.5,
+	Image = 4483362458,
+	Actions = { -- Notification Buttons
+		Ignore = {
+			Name = "知道吗？",
+			Callback = function()
+				print("知道就行 不提供算了")
+			end
+		},
+	},
+})
+
+Rayfield:Notify({
    Title = "启动bing脚本",
    Content = "已为你开启反挂机",
    Duration = 8.5,
