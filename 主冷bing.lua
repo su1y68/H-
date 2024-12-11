@@ -440,10 +440,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/zuohongjian/bjb/main/
 })
 
 local Tab = Window:CreateTab("公告", 4483362458) -- Title, Image
-local Label = Tab:CreateLabel("密码都是suxa 后续也不会更改",SectionParent)
+local Label = Tab:CreateLabel("群内@suxa并提供服务器名称或脚本",SectionParent)
+local Label = Tab:CreateLabel("密码都是bing 后续也不会更改",SectionParent)
 local Label = Tab:CreateLabel("使用TSB前进群拿密钥(反正你也不知道)",SectionParent)
 local Label = Tab:CreateLabel("请加入QQ群 一群即可",SectionParent)
 local Label = Tab:CreateLabel("所有脚本只会在 这里出现 群公告将不再更新",SectionParent)
-local Label = Tab:CreateLabel("QQ群:885222665 必须给我进去知道没？",SectionParent)
+local Label = Tab:CreateLabel("QQ群:885222665 进去懂?",SectionParent)
 
 Rayfield:LoadConfiguration()
