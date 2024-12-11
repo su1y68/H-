@@ -1,9 +1,22 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
+local themes = {
+    "Default",
+    "AmberGlow",
+    "Amethyst",
+    "Bloom",
+    "DarkBlue",
+    "Green",
+    "Light",
+    "Ocean",
+    "Serenity"
+}
+
 local Window = Rayfield:CreateWindow({
    Name = "冷tsb中心🧊",
    LoadingTitle = "TSB bing",
    LoadingSubtitle = "by suxa",
+   Theme = "Bloom",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
