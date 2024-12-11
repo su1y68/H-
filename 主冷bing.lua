@@ -1,4 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local player = game.Players.LocalPlayer
+local serverId = game.JobId
 
 local themes = {
     "Default",
@@ -224,6 +226,30 @@ local Label = Tab:CreateLabel("持续更新ing",SectionParent)
 local Tab = Window:CreateTab("玩家类修改", 4483362458) -- Title, Image
 
 local Label = Tab:CreateLabel("也是持续更新中",SectionParent)
+
+local Slider = PlayerTab:CreateSlider({
+    Name = "WalkSpeed",
+    Range = {16, 400},
+    Increment = 1,
+    Suffix = "Speed",
+    CurrentValue = 16,
+    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+     game.Players.LocalPlayer.Character:SetAttribute("SpeedMultiplier", Value)
+    end,
+ })
+
+local Slider = PlayerTab:CreateSlider({
+    Name = "Jump Height",
+    Range = {10, 500},
+    Increment = 1,
+    Suffix = "Height",
+    CurrentValue = 10,
+    Flag = "Slider3", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+     game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+    end,
+ })
 
 local Button = Tab:CreateButton({
    Name = "快捷自杀",
