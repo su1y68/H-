@@ -89,7 +89,15 @@ local Toggle = Tab:CreateToggle({
    CurrentValue = false,
    Flag = "InfiniteJumpToggle", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
-
+game:GetService("UserInputService").JumpRequest = true
+            game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+                if gameProcessed then return end -- 如果是系统处理的输入，则忽略
+                if input.KeyCode == Enum.KeyCode.Space then -- 检测是否按下空格键
+                    game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping) -- 强制玩家跳跃
+                end
+            end)
+            print("无限跳跃已启用")
+		else
    end,
 })
 
