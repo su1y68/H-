@@ -256,6 +256,20 @@ print("移动速度已设置为: " .. Value .. "x")
    end,
 })
 
+local Slider = Tab:CreateSlider({
+   Name = "跳跃高度",
+   Info = "也就这样", -- Speaks for itself, Remove if none.
+   Range = {50, 400},
+   Increment = 1,
+   Suffix = "units",
+   CurrentValue = 10,
+   Flag = "JumpSlider", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+print("跳跃高度已设置为: " .. Value .. " units")
+   end,
+})
+
 local Button = Tab:CreateButton({
    Name = "快捷自杀",
    Info = "Button info/Description.",
