@@ -83,6 +83,27 @@ Rayfield:Notify({
 
 local Tab = Window:CreateTab("通用", 4483362458) -- Title, Image
 
+local Toggle = Tab:CreateToggle({
+   Name = "无限跳跃",
+   Info = "Toggle info/Description.", -- Speaks for itself, Remove if none.
+   CurrentValue = false,
+   Flag = "InfiniteJumpToggle", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+game:GetService("UserInputService").JumpRequest = true
+game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+if gameProcessed then return end
+if input.KeyCode == Enum.KeyCode.Space then
+game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+                end
+            end)
+print("无限跳跃已启用")
+		else
+game:GetService("UserInputService").JumpRequest = false
+print("无限跳跃已禁用")
+		end
+   end,
+})
+
 local Button = Tab:CreateButton({
    Name = "爬墙",
    Info = "Button info/Description.",
