@@ -146,7 +146,8 @@ loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy
 
 local Tab = Window:CreateTab("攻击类", 4483362458) -- Title, Image
 
-local Paragraph = Tab:CreateParagraph({Title = "功能类", Content = "后续更新ing",SectionParent})
+local Label = Tab:CreateLabel("目前不多",SectionParent)
+local Label = Tab:CreateLabel("等后续更新",SectionParent)
 
 local Button = Tab:CreateButton({
    Name = "LAT漏洞",
@@ -156,6 +157,7 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
    end,
 })
+local Label = Tab:CreateLabel("↑这脚本内置动作集",SectionParent)
 
 local Tab = Window:CreateTab("返回原bing🧊中心", 4483362458) -- Title, Image
 
