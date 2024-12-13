@@ -93,7 +93,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/eEDYWj8p"))()
    end,
 })
 
-local Paragraph = Tab:CreateParagraph({Title = "饿狼专区", Content = "部分脚本有bug",SectionParent})
+Section:Set("饿狼专区 有些有bug")
 
 local Button = Tab:CreateButton({
    Name = "贝塔",
