@@ -41,7 +41,7 @@ local Window = Rayfield:CreateWindow({
 
 local Tab = Window:CreateTab("动作集类", 4483362458) -- Title, Image
 local Label = Tab:CreateLabel("奇遇专区",SectionParent)
-Section:Set("注意分辨")
+Label:Set("基本常用")
 local Button = Tab:CreateButton({
    Name = "jjs GOJO",
    Info = "Button info/Description.",
