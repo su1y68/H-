@@ -16,7 +16,7 @@ local Window = Rayfield:CreateWindow({
    Name = "冷tsb中心🧊",
    LoadingTitle = "TSB bing",
    LoadingSubtitle = "by suxa",
-   Theme = "Bloom",
+   Theme = "AmberGlow",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
@@ -92,7 +92,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/eEDYWj8p"))()
    end,
 })
 
-local Label = Tab:CreateLabel("饿狼专区",SectionParent)
+local Section = Tab:CreateSection("饿狼专区")
 
 local Button = Tab:CreateButton({
    Name = "贝塔",
@@ -121,7 +121,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/ref
    end,
 })
 
-local Label = Tab:CreateLabel("刀锋专区",SectionParent)
+local Section = Tab:CreateSection("刀锋专区")
 
 local Button = Tab:CreateButton({
    Name = "(我不知道改啥)",
@@ -132,7 +132,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/zyrask/Nexus-Base/mai
    end,
 })
 
-local Label = Tab:CreateLabel("索尼克专区",SectionParent)
+local Section = Tab:CreateSection("索尼克专区")
 
 local Button = Tab:CreateButton({
    Name = "Tojo",
@@ -145,8 +145,8 @@ loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy
 
 local Tab = Window:CreateTab("攻击类", 4483362458) -- Title, Image
 
-local Label = Tab:CreateLabel("目前不多",SectionParent)
-local Label = Tab:CreateLabel("等后续更新",SectionParent)
+local Label = Tab:CreateLabel("目前不多  公告",SectionParent)
+local Label = Tab:CreateLabel("等后续更新  公告",SectionParent)
 
 local Button = Tab:CreateButton({
    Name = "LAT漏洞",
@@ -156,7 +156,7 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
    end,
 })
-local Label = Tab:CreateLabel("↑这脚本内置动作集",SectionParent)
+local Label = Tab:CreateLabel("↑这脚本内置动作集  公告",SectionParent)
 
 local Tab = Window:CreateTab("返回原bing🧊中心", 4483362458) -- Title, Image
 
