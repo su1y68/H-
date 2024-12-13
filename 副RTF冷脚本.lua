@@ -40,7 +40,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 local Tab = Window:CreateTab("动作集类", 4483362458) -- Title, Image
-Section:Set("奇遇专区")
+local Label = Tab:CreateLabel("奇遇专区",SectionParent)
 local Button = Tab:CreateButton({
    Name = "jjs GOJO",
    Info = "Button info/Description.",
@@ -57,9 +57,9 @@ Rayfield:Notify({
 	Image = 4483362458,
 	Actions = { -- Notification Buttons
 		Ignore = {
-			Name = "yy",
+			Name = "",
 			Callback = function()
-				print("kl")
+				print("")
 			end
 		},
 	},
@@ -93,7 +93,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/eEDYWj8p"))()
    end,
 })
 
-Section:Set("饿狼专区 有些有bug")
+local Label = Tab:CreateLabel("饿狼专区",SectionParent)
 
 local Button = Tab:CreateButton({
    Name = "贝塔",
@@ -145,6 +145,8 @@ loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy
 })
 
 local Tab = Window:CreateTab("攻击类", 4483362458) -- Title, Image
+
+local Paragraph = Tab:CreateParagraph({Title = "功能类", Content = "后续更新ing",SectionParent})
 
 local Button = Tab:CreateButton({
    Name = "LAT漏洞",
