@@ -158,6 +158,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/
 })
 local Label = Tab:CreateLabel("↑这脚本内置动作集  公告",SectionParent)
 
+local Button = Tab:CreateButton({
+   Name = "点击启动",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/welomenchaina/Desire-s/refs/heads/main/desire%20hub%20rules",true))()
+   end,
+})
+local Label = Tab:CreateLabel("↑这是tsb的漏洞攻击",SectionParent)
+
 local Tab = Window:CreateTab("返回原bing🧊中心", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
