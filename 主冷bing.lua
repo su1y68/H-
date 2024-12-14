@@ -81,6 +81,8 @@ Rayfield:Notify({
    Image = 4483362458,
 })
 
+local Tab = Window:CreateTab("请你向左滑 ← 以防止看不到多项服务器脚本", 4483362458) -- Title, Image
+
 local Tab = Window:CreateTab("通用", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
@@ -465,5 +467,47 @@ local Label = Tab:CreateLabel("使用TSB前进群拿密钥(反正你也不知道
 local Label = Tab:CreateLabel("请加入QQ群 一群即可",SectionParent)
 local Label = Tab:CreateLabel("所有脚本只会在 这里出现 群公告将不再更新",SectionParent)
 local Label = Tab:CreateLabel("QQ群:885222665 进去懂?",SectionParent)
+
+local Tab = Window:CreateTab("好老外整合", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("此脚本是r script网站内MxHakon提供的多项通用ESP aimbot 子弹追踪工具挂")
+local Button = Tab:CreateButton({
+   Name = "点击",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PUSCRIPTS/PINGUIN/refs/heads/main/FusionWareUniversal"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "点击",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FOGOTY/super-script-all-games-roblox/main/script"))()
+   end,
+})
+local Label = Tab:CreateLabel("通用脚本↑",SectionParent)
+
+local Section = Tab:CreateSection("the Rake")
+local Label = Tab:CreateLabel("多项脚本修改",SectionParent)
+local Button = Tab:CreateButton({
+   Name = "点击",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/69e8ba1202445c3dd5573b1745f345ae.lua"))()
+   end,
+})
+
+local Section = Tab:CreateSection("fisch 🐟")
+local Button = Tab:CreateButton({
+   Name = "点击",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+   end,
+})
 
 Rayfield:LoadConfiguration()
