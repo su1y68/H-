@@ -479,7 +479,7 @@ local Label = Tab:CreateLabel("所有脚本只会在 这里出现 群公告将�
 local Label = Tab:CreateLabel("QQ群:885222665 进去懂?",SectionParent)
 
 local Tab = Window:CreateTab("好老外整合", 4483362458) -- Title, Image
-local Section = Tab:CreateSection("此脚本是r script网站内MxHakon提供的多项通用ESP aimbot 子弹追踪工具挂")
+local Section = Tab:CreateSection("此脚本是r script网站内MxHakon提供的多项通用 需要卡密!!!!! ESP aimbot 子弹追踪工具挂")
 local Button = Tab:CreateButton({
    Name = "点击",
    Info = "Button info/Description.",
@@ -499,6 +499,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FOGOTY/super-script-a
 })
 local Label = Tab:CreateLabel("通用脚本↑",SectionParent)
 
+local Button = Tab:CreateButton({
+   Name = "通用aimbot",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FacilityHUB/Facility-Key/refs/heads/main/Aimbot%20Universal%20Beta%20v1.0.0.0c"))()
+   end,
+})
+local Label = Tab:CreateLabel("↑通用aimbot 会覆盖本UI",SectionParent)
+
 local Section = Tab:CreateSection("the Rake")
 local Label = Tab:CreateLabel("多项脚本修改",SectionParent)
 local Button = Tab:CreateButton({
@@ -517,6 +527,17 @@ local Button = Tab:CreateButton({
    Interact = 'Changable',
    Callback = function()
 loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+   end,
+})
+
+
+local Section = Tab:CreateSection("evade")
+local Button = Tab:CreateButton({
+   Name = "点击启动evade",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/4f5c7bbe546251d81e9d3554b109008f.lua"))()
    end,
 })
 
