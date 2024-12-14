@@ -541,4 +541,58 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/4f5c7bbe546251
    end,
 })
 
+local Tab = Window:CreateTab("速度传奇", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "点击",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Artifacttx/YumeHub/main/Loader.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("国外通用缝合脚本", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "N HUB",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/universal"))()
+   end,
+})
+local Label = Tab:CreateLabel("此脚本有50多种支持游戏",SectionParent)
+local Label = Tab:CreateLabel("↑自带的有通用功能 可能会覆盖本脚本",SectionParent)
+
+local Button = Tab:CreateButton({
+   Name = "点击启动",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexcirer/Alexcirer/refs/heads/main/blueredhub"))()
+   end,
+})
+local Label = Tab:CreateLabel("↑此脚本游戏服务器可能有点少",SectionParent)
+local Label = Tab:CreateLabel("脚本一定很多",SectionParent)
+
+local Tab = Window:CreateTab("驾驶帝国", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "点击即可启动",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/4f5c7bbe546251d81e9d3554b109008f.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("入口点", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "点击启动",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fa1f139a9ed8888612322932d0f68ce0.lua"))()
+   end,
+})
+local Label = Tab:CreateLabel("目前最强 100多种指令可修改",SectionParent)
+
 Rayfield:LoadConfiguration()
