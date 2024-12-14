@@ -52,6 +52,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "tsb动作集中心",
+   Info = "Button info/Description.",
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/asehbzi/affect/refs/heads/main/tsbkey"))()
+   end,
+})
+local Label = Tab:CreateLabel("tsb动作需要卡密 实际是圈钱脚本 私发找我要",SectionParent)
+
 Rayfield:Notify({
 	Title = "服务器",
 	Content = "由于脚本较少，需你提供服务器或脚本来🤗",
