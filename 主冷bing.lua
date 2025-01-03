@@ -63,8 +63,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/asehbzi/affect/refs/h
 local Label = Tab:CreateLabel("tsb动作需要卡密 实际是圈钱脚本 私发找我要",SectionParent)
 
 Rayfield:Notify({
-	Title = "服务器",
-	Content = "由于脚本较少，需你提供服务器或脚本来🤗",
+	Title = "25.1.3更新",
+	Content = "",
 	Duration = 9.5,
 	Image = 4483362458,
 	Actions = { -- Notification Buttons
@@ -560,8 +560,8 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/universal"))()
    end,
 })
-local Label = Tab:CreateLabel("此脚本有50多种支持游戏",SectionParent)
-local Label = Tab:CreateLabel("↑自带的有通用功能 可能会覆盖本脚本",SectionParent)
+local Label = Tab:CreateLabel("此脚本有50多种支持游戏 告知",SectionParent)
+local Label = Tab:CreateLabel("↑自带的有通用功能 可能会覆盖本脚本 告知",SectionParent)
 
 local Button = Tab:CreateButton({
    Name = "点击启动",
@@ -571,8 +571,8 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexcirer/Alexcirer/refs/heads/main/blueredhub"))()
    end,
 })
-local Label = Tab:CreateLabel("↑此脚本游戏服务器可能有点少",SectionParent)
-local Label = Tab:CreateLabel("脚本一定很多",SectionParent)
+local Label = Tab:CreateLabel("↑此脚本游戏服务器可能有点少 告知",SectionParent)
+local Label = Tab:CreateLabel("脚本一定很多 告知",SectionParent)
 
 local Tab = Window:CreateTab("驾驶帝国", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
@@ -593,6 +593,48 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fa1f139a9ed8888612322932d0f68ce0.lua"))()
    end,
 })
-local Label = Tab:CreateLabel("目前最强 100多种指令可修改",SectionParent)
+local Label = Tab:CreateLabel("目前最强 100多种指令可修改 告知",SectionParent)
+
+local Tab = Window:CreateTab("刀刃球", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "NoEnemiesHub",
+   Info = "Button info/Description.", -- Speaks for itself, Remove if none.
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Akash1al/Blade-Ball-Updated-Script/refs/heads/main/Blade-Ball-Script"))()
+   end,
+})
+
+local Tab = Window:CreateTab("必用脚本通用类", 4483362458) -- Title, Image
+local Label = Tab:CreateLabel("↓必要的时刻屏蔽让你恼怒可使用",SectionParent)
+local Button = Tab:CreateButton({
+   Name = "聊天绕过旁路",
+   Info = "Button info/Description.", -- Speaks for itself, Remove if none.
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/secretmenacingcooluser/chat-bypass/refs/heads/main/main'))()
+   end,
+})
+
+local Tab = Window:CreateTab("保龄球模拟器", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Aura hub",
+   Info = "Button info/Description.", -- Speaks for itself, Remove if none.
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesGamesO/Flare/refs/heads/main/Bowling%20Simulator.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("测试脚本地区", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "通用杀戮光环",
+   Info = "Button info/Description.", -- Speaks for itself, Remove if none.
+   Interact = 'Changable',
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamesGamesO/Flare/refs/heads/main/Bowling%20Simulator.lua"))()
+   end,
+})
+local Label = Tab:CreateLabel("此脚本应该是通用型杀戮脚本", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 
 Rayfield:LoadConfiguration()
