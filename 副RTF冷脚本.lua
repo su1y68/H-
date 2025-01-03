@@ -13,7 +13,7 @@ local themes = {
 }
 
 local Window = Rayfield:CreateWindow({
-   Name = "冷tsb中心🧊",
+   Name = "冷TSB×TSB中心",
    LoadingTitle = "TSB bing",
    LoadingSubtitle = "by suxa",
    Theme = "AmberGlow",
@@ -29,7 +29,7 @@ local Window = Rayfield:CreateWindow({
    },
    KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
-      Title = "冷bing tsb动作集",
+      Title = "冷bing tsb动作
       Subtitle = "Key 系统",
       Note = "请加入QQ群主:885222665",
       FileName = "SiriusKey",
@@ -51,7 +51,7 @@ loadstring(game:HttpGet("https://gist.githubusercontent.com/JcBoomin/a63e9ac3e90
 })
 
 Rayfield:Notify({
-	Title = "本bing tsb动作集中心",
+	Title = "更新25年1月3日🤗",
 	Content = "by suxa",
 	Duration = 9.5,
 	Image = 4483362458,
@@ -145,8 +145,8 @@ loadstring(game:HttpGet"https://raw.githubusercontent.com/Wi-sp/Limitless-legacy
 
 local Tab = Window:CreateTab("攻击类", 4483362458) -- Title, Image
 
-local Label = Tab:CreateLabel("目前不多  公告",SectionParent)
-local Label = Tab:CreateLabel("等后续更新  公告",SectionParent)
+local Label = Tab:CreateLabel("目前不多  告知",SectionParent)
+local Label = Tab:CreateLabel("等后续更新  告知",SectionParent)
 
 local Button = Tab:CreateButton({
    Name = "LAT漏洞",
@@ -156,7 +156,7 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xVicity/GLACIER/main/LATEST.lua"))()
    end,
 })
-local Label = Tab:CreateLabel("↑这脚本内置动作集  公告",SectionParent)
+local Label = Tab:CreateLabel("↑这脚本内置动作集  告知",SectionParent)
 
 local Button = Tab:CreateButton({
    Name = "点击启动",
@@ -166,7 +166,7 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/welomenchaina/Desire-s/refs/heads/main/desire%20hub%20rules",true))()
    end,
 })
-local Label = Tab:CreateLabel("↑这是tsb的漏洞攻击",SectionParent)
+local Label = Tab:CreateLabel("↑这是tsb的漏洞攻击 告知",SectionParent)
 
 local Tab = Window:CreateTab("返回原bing🧊中心", 4483362458) -- Title, Image
 
@@ -178,5 +178,7 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E4%B8%BB%E5%86%B7bing.lua"))()
    end,
 })
+
+local Label = Tab:CreateLabel("需要重新输入卡密",SectionParent)
 
 Rayfield:LoadConfiguration()
