@@ -18,7 +18,7 @@ Frame.Size = UDim2.new(0, 500, 0, 400)
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 
 Title.Parent = Frame
-Title.Text = "服务器公告"
+Title.Text = "公告（心看）"
 Title.Font = Enum.Font.GothamBold
 Title.TextSize = 18
 Title.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2)
@@ -57,7 +57,7 @@ BKL提醒（并不会提示更新什么）:
 BKL:
 1.由于寒假关系 日常更新
 2.QQ:386884885（乐子就算了）
-3.点击启动脚本 将会进入公告 需再次点击
+3.点击启动脚本 将会进入
 ]]
 Announcement.Font = Enum.Font.Gotham
 Announcement.TextSize = 14
