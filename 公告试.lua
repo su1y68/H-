@@ -60,6 +60,9 @@ BKL:
 3.点击启动脚本 将会进入
 4.重启所有项目
 5.已回归Roblox 当script脚本开发
+
+已知你是本群885222665的一名群员
+点击加载脚本 会有两个项目   BKL脚本   bing中心（老版本）
 ]]
 Announcement.Font = Enum.Font.Gotham
 Announcement.TextSize = 14
