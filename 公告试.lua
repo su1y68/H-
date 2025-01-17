@@ -12,7 +12,7 @@ local Image = Instance.new("ImageLabel")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
+Frame.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
 Frame.Position = UDim2.new(0.5, -250, 0.5, -200)
 Frame.Size = UDim2.new(0, 500, 0, 400)
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
