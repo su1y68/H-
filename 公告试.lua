@@ -53,10 +53,11 @@ ScrollFrame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
 
 Announcement.Parent = ScrollFrame
 Announcement.Text = [[
-欢迎来到服务器！这是服务器公告的内容。
-这里可以写一些详细的服务器规则、更新日志或者其他消息。
-确保所有的文本在框内可以滑动，不会被截断。
-您可以根据需要调整这里的文字，最多可填写 600 字。
+BKL提醒（并不会提示更新什么）:
+BKL:
+1.由于寒假关系 日常更新
+2.QQ:386884885（乐子就算了）
+3.点击启动脚本 将会进入公告（需要再次点击加载脚本才能完全进入）
 ]]
 Announcement.Font = Enum.Font.Gotham
 Announcement.TextSize = 14
@@ -80,7 +81,5 @@ end)
 StartButton.MouseButton1Click:Connect(function()
     ScreenGui:Destroy()
     print("开始加载主脚本...")
-
-    -- 加载主脚本
-    loadstring(game:HttpGet("https://your-script-url.com/main.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E5%85%AC%E5%91%8A%E6%B5%8B%E8%AF%95.lua"))()
 end)
