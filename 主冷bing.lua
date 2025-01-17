@@ -41,14 +41,14 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("TSB", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("点击回归BKL脚本", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
-   Name = "TSB by suxa",
+   Name = "BKL脚本",
    Info = "动作集脚本",
    Interact = 'Changable',
    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E5%89%AFRTF%E5%86%B7%E8%84%9A%E6%9C%AC.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E9%87%8D%E5%88%B6bing.lua"))()
    end,
 })
 
