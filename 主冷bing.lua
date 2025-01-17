@@ -18,7 +18,7 @@ local Window = Rayfield:CreateWindow({
    Name = "冷bing🧊中心",
    LoadingTitle = "bing",
    LoadingSubtitle = "by suxa",
-   Theme = "Ocean",
+   Theme = "Amethyst",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
@@ -29,7 +29,7 @@ local Window = Rayfield:CreateWindow({
       Invite = "sirius", -- The Discord invite code, do not include discord.gg/
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
-   KeySystem = true, -- Set this to true to use our key system
+   KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
       Title = "冷bing🧊快捷脚本",
       Subtitle = "Key 系统",
@@ -51,16 +51,6 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E5%89%AFRTF%E5%86%B7%E8%84%9A%E6%9C%AC.lua"))()
    end,
 })
-
-local Button = Tab:CreateButton({
-   Name = "tsb动作集中心",
-   Info = "Button info/Description.",
-   Interact = 'Changable',
-   Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/asehbzi/affect/refs/heads/main/tsbkey"))()
-   end,
-})
-local Label = Tab:CreateLabel("tsb动作需要卡密 实际是圈钱脚本 私发找我要",SectionParent)
 
 Rayfield:Notify({
 	Title = "25.1.3更新",
