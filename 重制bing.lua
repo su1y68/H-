@@ -18,7 +18,7 @@ local Window = Rayfield:CreateWindow({
    Name = "BKL中心",
    LoadingTitle = "BKL",
    LoadingSubtitle = "by SuXiaL",
-   Theme = "Ocean",
+   Theme = "Bloom",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
@@ -41,16 +41,20 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("此地向左滑", 4483362458)
-local Label = Tab:CreateLabel("往左滑看清楚", 4483362458)
-local Label = Tab:CreateLabel("你最好别是瞎子", 4483362458)
+local Tab = Window:CreateTab("此地向左滑")
+local Label = Tab:CreateLabel("往左滑看清楚")
+local Label = Tab:CreateLabel("你最好别是瞎子")
 
-local Tab = Window:CreateTab("脚本公告", 4483362458)
-local Label = Tab:CreateLabel("本脚本已更改BKL", 4483362458)
-local Label = Tab:CreateLabel("后续将持续更新（由于寒假的缘故每天更新)")
-local Label = Tab:CreateLabel("支持GPT4o 好吧", 4483362458)
-local Label = Tab:CreateLabel("作者QQ:386884885", 4483362458)
-local Label = Tab:CreateLabel("QQ群聊:885222665  👈🤗 给我加进去懂?", 4483362458)
-local Label = Tab:CreateLabel("没啥好说的了", 4483362458)
+local Tab = Window:CreateTab("脚本公告", 4483362458) -- Title, Image
+local Label = Tab:CreateLabel("正在维护更新中～")
+local Label = Tab:CreateLabel("所有脚本已关闭")
+
+local Tab = Window:CreateTab("点击回到旧版本（持续更新）", 4483362458) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "旧版本Bing🧊",
+   Callback = function()
+
+   end,
+})
 
 Rayfield:LoadConfiguration()
