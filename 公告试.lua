@@ -57,7 +57,7 @@ BKL提醒（并不会提示更新什么）:
 BKL:
 1.由于寒假关系 日常更新
 2.QQ:386884885（乐子就算了）
-3.点击启动脚本 将会进入公告（需要再次点击加载脚本才能完全进入）
+3.点击启动脚本 将会进入公告 需再次点击
 ]]
 Announcement.Font = Enum.Font.Gotham
 Announcement.TextSize = 14
