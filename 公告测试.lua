@@ -56,9 +56,7 @@ end)
 loadButton.MouseButton1Click:Connect(function()
     -- 在这里放置你加载主脚本的代码
     print("主脚本已加载！")
-    -- 示例加载脚本的代码：
-    -- loadstring(game:HttpGet("https://example.com/script.lua"))()
-    -- 或者将自己的主脚本代码放在这里
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E9%87%8D%E5%88%B6bing.lua"))()
 end)
 
 -- 创建一个用于显示公告内容的滚动框
