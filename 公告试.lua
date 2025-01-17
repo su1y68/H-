@@ -58,6 +58,8 @@ BKL:
 1.由于寒假关系 日常更新
 2.QQ:386884885（乐子就算了）
 3.点击启动脚本 将会进入
+4.重启所有项目
+5.已回归Roblox 当script脚本开发
 ]]
 Announcement.Font = Enum.Font.Gotham
 Announcement.TextSize = 14
