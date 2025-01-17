@@ -53,7 +53,7 @@ local Tab = Window:CreateTab("点击回到旧版本（持续更新）", 44833624
 local Button = Tab:CreateButton({
    Name = "旧版本Bing🧊",
    Callback = function()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E4%B8%BB%E5%86%B7bing.lua"))()
    end,
 })
 
