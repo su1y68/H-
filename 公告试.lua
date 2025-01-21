@@ -1,90 +1,107 @@
 -- 创建主公告界面
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local Title = Instance.new("TextLabel")
-local CloseButton = Instance.new("TextButton")
-local StartButton = Instance.new("TextButton")
-local ScrollFrame = Instance.new("ScrollingFrame")
-local Announcement = Instance.new("TextLabel")
-local Image = Instance.new("ImageLabel")
+local ScreenGui = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui)
+local Frame = Instance.new("Frame", ScreenGui)
+local UICorner = Instance.new("UICorner", Frame) -- 为主框增加圆角
+local Title = Instance.new("TextLabel", Frame)
+local ScrollingFrame = Instance.new("ScrollingFrame", Frame) -- 添加可滚动区域
+local Content = Instance.new("TextLabel", ScrollingFrame) -- 文本放入滚动区域
+local ConfirmButton = Instance.new("TextButton", Frame)
+local CloseButton = Instance.new("TextButton", Frame)
 
--- 设置公告界面属性
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+-- 设置主公告界面
+ScreenGui.Name = "AnnouncementGUI"
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
-Frame.Position = UDim2.new(0.5, -50, 0.5, -80)
-Frame.Size = UDim2.new(0, 400, 0, 400)
-Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.Size = UDim2.new(0, 500, 0, 300) -- 主框大小
+Frame.Position = UDim2.new(0.5, -250, 0.5, -150) -- 居中
+Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35) -- 背景颜色
+Frame.BorderSizePixel = 2
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
 
-Title.Parent = Frame
-Title.Text = "公告（心看）"
-Title.Font = Enum.Font.GothamBold
-Title.TextSize = 18
-Title.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2)
-Title.Size = UDim2.new(1, 0, 0, 40)
-Title.TextColor3 = Color3.new(1, 1, 1)
+-- 设置圆角
+UICorner.CornerRadius = UDim.new(0, 10) -- 圆角半径（10可以调节）
 
--- 调整按钮位置
-CloseButton.Parent = Frame
-CloseButton.Text = "关闭"
-CloseButton.Font = Enum.Font.Gotham
-CloseButton.TextSize = 14
-CloseButton.BackgroundColor3 = Color3.new(0.8, 0.2, 0.2)
-CloseButton.Position = UDim2.new(0.88, 0, 0, 5)  -- 调整按钮位置
-CloseButton.Size = UDim2.new(0, 50, 0, 30)
-CloseButton.TextColor3 = Color3.new(1, 1, 1)
+-- 设置标题
+Title.Text = "BKL脚本公告"
+Title.Size = UDim2.new(1, 0, 0, 50)
+Title.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.Font = Enum.Font.SourceSansBold
+Title.TextScaled = true
 
-StartButton.Parent = Frame
-StartButton.Text = "启动脚本"
-StartButton.Font = Enum.Font.Gotham
-StartButton.TextSize = 14
-StartButton.BackgroundColor3 = Color3.new(0.2, 0.8, 0.2)
-StartButton.Position = UDim2.new(0.68, 0, 0, 5)  -- 调整按钮位置
-StartButton.Size = UDim2.new(0, 80, 0, 30)
-StartButton.TextColor3 = Color3.new(1, 1, 1)
+-- 为标题添加圆角
+local TitleCorner = Instance.new("UICorner", Title)
+TitleCorner.CornerRadius = UDim.new(0, 10)
 
-ScrollFrame.Parent = Frame
-ScrollFrame.Size = UDim2.new(1, -20, 1, -100)  -- 调整 ScrollFrame 尺寸避免底部白色区域
-ScrollFrame.Position = UDim2.new(0, 10, 0, 50)
-ScrollFrame.CanvasSize = UDim2.new(0, 0, 0, 600)
-ScrollFrame.ScrollBarThickness = 10
-ScrollFrame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
+-- 设置滚动区域
+ScrollingFrame.Size = UDim2.new(1, -20, 0, 180) -- 调整大小
+ScrollingFrame.Position = UDim2.new(0, 10, 0, 60)
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.ScrollBarThickness = 8
+ScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(200, 200, 200)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2, 0) -- 设置内容区域大小，2表示两倍Frame高度
 
-Announcement.Parent = ScrollFrame
-Announcement.Text = [[
-BKL提醒（并不会提示更新什么）:
-BKL:
-1.由于寒假关系 日常更新
-2.QQ:386884885（乐子就算了）
-3.点击启动脚本 将会进入
-4.重启所有项目
-5.已回归Roblox 当script脚本开发
-
-已知你是本群885222665的一名群员
-点击加载脚本 会有两个项目   BKL脚本   bing中心（老版本）
+-- 设置内容文本
+Content.Text = [[
+这里是BKL 温馨提醒:
+1.不要以为不被其他人举报你就没事
+2.如果你光明正大的开 遭受举报 从而导致封号 我直接😂👉😭
+3.现在只做一个脚本 云端更新 万年不变
+4.作者QQ号:386884885↓
+QQ群:885222665
 ]]
-Announcement.Font = Enum.Font.Gotham
-Announcement.TextSize = 14
-Announcement.TextColor3 = Color3.new(1, 1, 1)
-Announcement.Size = UDim2.new(1, -10, 0, 600)
-Announcement.TextWrapped = true
-Announcement.TextXAlignment = Enum.TextXAlignment.Left
-Announcement.TextYAlignment = Enum.TextYAlignment.Top
-Announcement.BackgroundTransparency = 1
+Content.Size = UDim2.new(1, -10, 0, 600) -- 调整文本大小
+Content.Position = UDim2.new(0, 5, 0, 0)
+Content.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Content.TextColor3 = Color3.fromRGB(255, 255, 255)
+Content.Font = Enum.Font.SourceSans
+Content.TextScaled = false -- 不自动缩放字体
+Content.TextSize = 20 -- 字体大小
+Content.TextWrapped = true
+Content.TextXAlignment = Enum.TextXAlignment.Left
+Content.TextYAlignment = Enum.TextYAlignment.Top
 
-Image.Parent = Frame
-Image.Size = UDim2.new(0, 100, 0, 100)
-Image.Position = UDim2.new(0.5, -50, 0, 300)
-Image.Image = "rbxassetid://5252447904"
+-- 设置确认按钮
+ConfirmButton.Text = "确认"
+ConfirmButton.Size = UDim2.new(0, 150, 0, 50) -- 按钮大小
+ConfirmButton.Position = UDim2.new(0.5, -75, 0.85, 0) -- 位于底部中间
+ConfirmButton.BackgroundColor3 = Color3.fromRGB(40, 200, 40)
+ConfirmButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ConfirmButton.Font = Enum.Font.SourceSansBold
+ConfirmButton.TextScaled = true
 
--- 功能回调函数
-CloseButton.MouseButton1Click:Connect(function()
+-- 为确认按钮增加圆角
+local ConfirmCorner = Instance.new("UICorner", ConfirmButton)
+ConfirmCorner.CornerRadius = UDim.new(0, 10)
+
+-- 设置关闭按钮
+CloseButton.Text = "关闭"
+CloseButton.Size = UDim2.new(0, 80, 0, 40) -- 按钮大小
+CloseButton.Position = UDim2.new(1, -90, 0, 5) -- 放置在右上角
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.Font = Enum.Font.SourceSansBold
+CloseButton.TextScaled = true
+
+-- 为关闭按钮增加圆角
+local CloseCorner = Instance.new("UICorner", CloseButton)
+CloseCorner.CornerRadius = UDim.new(0, 10)
+
+-- 添加确认功能
+ConfirmButton.MouseButton1Click:Connect(function()
+    print("已确认公告内容") -- 这里可以放置您需要的功能代码
+    -- 加载主脚本
+    local success, err = pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E5%85%AC%E5%91%8A%E8%AF%95.lua"))()
+    end)
+    if not success then
+        warn("加载主脚本失败: " .. err)
+    end
     ScreenGui:Destroy()
 end)
 
-StartButton.MouseButton1Click:Connect(function()
+-- 添加关闭功能
+CloseButton.MouseButton1Click:Connect(function()
+    print("公告已关闭")
     ScreenGui:Destroy()
-    print("开始加载主脚本...")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E9%87%8D%E5%88%B6bing.lua"))()
 end)
