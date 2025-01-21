@@ -41,6 +41,27 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
+Rayfield:Notify({
+   Title = "启动bing脚本",
+   Content = "已为你开启反挂机",
+   Duration = 7.5,
+   Image = ,
+})
+
+Rayfield:Notify({
+   Title = "岁月封住遗憾 你看懂了吗少年？",
+   Content = "初步调节服务器",
+   Duration = 8.5,
+   Image = ,
+})
+
+Rayfield:Notify({
+   Title = "已加载完成",
+   Content = "v3版BKL",
+   Duration = 9.5,
+   Image = ,
+})
+
 local Tab = Window:CreateTab("此区向左滑")
 local Label = Tab:CreateLabel("往左滑看清楚")
 local Label = Tab:CreateLabel("你最好别是瞎子")
