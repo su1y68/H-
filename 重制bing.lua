@@ -55,20 +55,13 @@ Rayfield:Notify({
    Image = ,
 })
 
-Rayfield:Notify({
-   Title = "已加载完成",
-   Content = "v3版BKL",
-   Duration = 9.5,
-   Image = ,
-})
-
 local Tab = Window:CreateTab("此区向左滑")
 local Label = Tab:CreateLabel("往左滑看清楚")
 local Label = Tab:CreateLabel("你最好别是瞎子")
 
 local Tab = Window:CreateTab("脚本公告") -- Title, Image
 local Label = Tab:CreateLabel("正在维护更新中～")
-local Label = Tab:CreateLabel("所有脚本已关闭")
+local Label = Tab:CreateLabel("所有脚本已开启更新")
 
 local Tab = Window:CreateTab("玩家功能") -- Title, Image
 
