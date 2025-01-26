@@ -270,3 +270,27 @@ Tab:AddButton({
   	end    
 
 })
+
+local CreditsTab = Window:MakeTab({
+    Name = "需要自己解卡密",
+    Icon = "rbxassetid://7229442422",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+
+	Name = "zenwe",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/LarsScripts/Fisch/refs/heads/main/ZenWare",true))()
+
+  	end    
+
+})
+Tab:AddButton({
+	Name = "点击复制卡（ze）",
+	Callback = function()
+     setclipboard("PLSREPORTBUGSINGENERALORMEDIA")
+  	end
+})
