@@ -271,12 +271,6 @@ Tab:AddButton({
 
 })
 
-local CreditsTab = Window:MakeTab({
-    Name = "需要自己解卡密",
-    Icon = "rbxassetid://7229442422",
-    PremiumOnly = false
-})
-
 Tab:AddButton({
 
 	Name = "zenwe",
