@@ -271,12 +271,6 @@ Tab:AddButton({
 
 })
 
-CreditsTab:AddButton({
-    Name = "此脚本↑ 小小卡密自己解哦",
-    Callback = function()
-        end
-})
-
 Tab:AddButton({
 
 	Name = "Zenwe",
