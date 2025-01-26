@@ -75,7 +75,7 @@ OrionLib:MakeNotification({
 	Name = "RS脚本",
 	Content = "欢迎使用RS脚本",
 	Image = "rbxassetid://4483345998",
-	Time = 2
+	Time = 4
 
 })
 
@@ -220,6 +220,52 @@ Tab:AddButton({
 	Callback = function()
 
      loadstring(game:HttpGet('https://pastebin.com/raw/U27yQRxS'))()
+
+  	end    
+
+})
+
+local Tab = Window:MakeTab({
+
+    Name = "Fisch鱼脚本",
+
+    Icon = "rbxassetid://4483345998",
+
+    PremiumOnly = false
+
+})
+
+Tab:AddButton({
+
+	Name = "Speed x hub",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "huzzhub",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/notjohnnylol/Fisch/refs/heads/main/HuzzHub"))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "lunor hub",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Just3itx/Lunor-Loadstrings/refs/heads/main/Loader"))()
 
   	end    
 
