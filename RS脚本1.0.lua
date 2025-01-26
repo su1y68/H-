@@ -73,9 +73,9 @@ Tab:AddButton({
 
 OrionLib:MakeNotification({
 	Name = "RS脚本",
-	Content = "欢迎使用RS脚本",
+	Content = "欢迎小小使用本脚本",
 	Image = "rbxassetid://4483345998",
-	Time = 4
+	Time = 5
 
 })
 
@@ -235,6 +235,12 @@ local Tab = Window:MakeTab({
 
 })
 
+local Section = Tab:AddSection({
+
+	Name = "Fisch 目前这些（相对比较好一点的）"
+
+})
+
 Tab:AddButton({
 
 	Name = "Speed x hub",
@@ -270,6 +276,7 @@ Tab:AddButton({
   	end    
 
 })
+Tab:AddLabel("此脚本需要卡密 小小你得自己弄哦~")
 
 Tab:AddButton({
 
