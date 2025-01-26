@@ -92,13 +92,8 @@ ConfirmButton.MouseButton1Click:Connect(function()
     print("已确认公告内容") -- 这里可以放置您需要的功能代码
     -- 加载主脚本
     local success, err = pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E5%85%AC%E5%91%8A%E8%AF%95.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/su1y68/H-/refs/heads/main/%E9%87%8D%E5%88%B6bing.lua"))()
     end)
-    if not success then
-        warn("加载主脚本失败: " .. err)
-    end
-    ScreenGui:Destroy()
-end)
 
 -- 添加关闭功能
 CloseButton.MouseButton1Click:Connect(function()
