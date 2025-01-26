@@ -64,19 +64,9 @@ OrionLib:MakeNotification({
 
 OrionLib:MakeNotification({
 	Name = "RS 谢谢",
-	Content = "我依然记得我SuXiaL从前是RS的一部分",
+	Content = "我依然记得我从前是RS的一部分",
 	Image = "rbxassetid://4483345998",
 	Time = 8
-
-})
-		
-local Tab = Window:MakeTab({
-
-	Name = "陈脚本DOORS2.0",
-
-	Icon = "rbxassetid://4483345998",
-
-	PremiumOnly = false
 
 })
 
@@ -314,7 +304,7 @@ Tab:AddTextbox({
 
 Tab:AddToggle({
 
-	Name = "穿墙2",
+	Name = "穿墙",
 
 	Default = false,
 
@@ -366,7 +356,7 @@ Tab:AddToggle({
 
 Tab:AddToggle({
 
-	Name = "夜视",
+	Name = "夜视（较大）",
 
 	Default = false,
 
