@@ -50,15 +50,12 @@ local about = Window:MakeTab({
 
 about:AddParagraph("作者:SuXiaL")
 about:AddParagraph("QQ号:386884885")
-about:AddParagraph("QQ群:885222665")
-about:AddParagraph("目前三个脚本 可进群要 目前脚本:RS脚本")
-about:AddParagraph("本脚本为全缝合脚本")
 
 OrionLib:MakeNotification({
 	Name = "RS脚本",
-	Content = "岁月封住遗憾 写下无尽叹息..",
+	Content = "岁月封住遗憾 写下无尽叹息",
 	Image = "rbxassetid://4483345998",
-	Time = 6
+	Time = 5
 
 })
 
@@ -66,7 +63,7 @@ OrionLib:MakeNotification({
 	Name = "RS 谢谢",
 	Content = "我依然记得我从前是RS的一部分",
 	Image = "rbxassetid://4483345998",
-	Time = 8
+	Time = 5
 
 })
 
@@ -403,17 +400,5 @@ Tab:AddButton({
       	loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
 
   	end
-
-})
-
-Tab:AddButton({
-
-    Name="立即死亡",
-
-    Callback=function()
-
-        game.Players.LocalPlayer.Character.Humanoid.Health=0
-
-    end
 
 })
