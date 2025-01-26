@@ -249,7 +249,7 @@ Tab:AddButton({
 
 Tab:AddButton({
 
-	Name = "huzzhub",
+	Name = "Huzzhub",
 
 	Callback = function()
 
@@ -261,7 +261,7 @@ Tab:AddButton({
 
 Tab:AddButton({
 
-	Name = "lunor hub",
+	Name = "Lunor hub",
 
 	Callback = function()
 
@@ -271,9 +271,15 @@ Tab:AddButton({
 
 })
 
+CreditsTab:AddButton({
+    Name = "此脚本↑ 小小卡密自己解哦",
+    Callback = function()
+        end
+})
+
 Tab:AddButton({
 
-	Name = "zenwe",
+	Name = "Zenwe",
 
 	Callback = function()
 
