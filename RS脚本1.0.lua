@@ -39,7 +39,7 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local Window = OrionLib:MakeWindow({Name = "RS脚本", HidePremium = false, SaveConfig = true,IntroText = "RS脚本", ConfigFolder = "RS脚本"})
+local Window = OrionLib:MakeWindow({Name = "RS脚本1.1", HidePremium = false, SaveConfig = true,IntroText = "RS脚本", ConfigFolder = "RS脚本"})
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "bing RS脚本"; Text ="缝合脚本"; Duration = 4; })
 
 local about = Window:MakeTab({
@@ -50,6 +50,8 @@ local about = Window:MakeTab({
 
 about:AddParagraph("作者:SuXiaL")
 about:AddParagraph("缝合脚本免费 请勿上当")
+about:AddParagraph("RS脚本为特殊版本")
+about:AddParagraph("更新时间:25.1.26  11:26")
 
 local Tab =Window:MakeTab({
 	Name = "公告",
@@ -215,11 +217,11 @@ Tab:AddToggle({
 
 Tab:AddButton({
 
-	Name = "飞行V3（隐藏）",
+	Name = "飞行V1（隐藏）",
 
 	Callback = function()
 
-     loadstring(game:HttpGet('https://pastebin.com/raw/U27yQRxS'))()
+     loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
 
   	end    
 
@@ -264,7 +266,7 @@ Tab:AddButton({
   	end    
 
 })
-
+Tab:AddLabel("👇需自解卡密")
 Tab:AddButton({
 
 	Name = "Lunor hub",
@@ -276,8 +278,8 @@ Tab:AddButton({
   	end    
 
 })
-Tab:AddLabel("此脚本需要卡密 小小你得自己弄哦~")
-
+Tab:AddLabel("👆此脚本（Lunor需要卡密 小小你得自己弄哦~")
+Tab:AddLabel("👇此脚本有自动bug")
 Tab:AddButton({
 
 	Name = "Zenwe",
@@ -295,3 +297,4 @@ Tab:AddButton({
      setclipboard("PLSREPORTBUGSINGENERALORMEDIA")
   	end
 })
+Tab:AddLabel("脚本自动有bug")
