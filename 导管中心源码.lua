@@ -79,7 +79,13 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 
 })
-		
+
+local Section = Tab:AddSection({
+
+	Name = "这里是套用 因为太懒了"
+
+})
+
 Tab:AddSlider({
 
 	Name = "速度",
