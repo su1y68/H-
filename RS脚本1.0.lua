@@ -436,12 +436,6 @@ Tab:AddButton({
 })
 Tab:AddLabel("这些脚本可能通用foor2 rooms")
 
-local Section = Tab:AddSection({
-
-	Name = "Foor2 rooms"
-
-})
-
 Tab:AddButton({
 
 	Name = "①脚本",
@@ -463,12 +457,6 @@ Tab:AddButton({
      loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/Script/main/doors/WeiShan_Loader.lua"))()
 
   	end    
-
-})
-
-local Section = Tab:AddSection({
-
-	Name = "变身脚本"
 
 })
 
