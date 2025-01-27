@@ -39,7 +39,7 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local Window = OrionLib:MakeWindow({Name = "RS脚本1.1", HidePremium = false, SaveConfig = true,IntroText = "RS脚本", ConfigFolder = "RS脚本"})
+local Window = OrionLib:MakeWindow({Name = "RS脚本1.5", HidePremium = false, SaveConfig = true,IntroText = "RS脚本", ConfigFolder = "RS脚本"})
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "bing RS脚本"; Text ="缝合脚本"; Duration = 4; })
 
 local about = Window:MakeTab({
@@ -51,7 +51,7 @@ local about = Window:MakeTab({
 about:AddParagraph("作者:SuXiaL")
 about:AddParagraph("缝合脚本免费 请勿上当")
 about:AddParagraph("RS脚本为特殊版本")
-about:AddParagraph("更新时间:25.1.26  11:26")
+about:AddParagraph("更新时间:25.1.27")
 
 local Tab =Window:MakeTab({
 	Name = "公告",
@@ -239,7 +239,19 @@ local Tab = Window:MakeTab({
 
 local Section = Tab:AddSection({
 
-	Name = "Fisch 目前这些（相对比较好一点的）"
+	Name = "Fisch脚本↓free免费"
+
+})
+
+Tab:AddButton({
+
+	Name = "Rait",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/refs/heads/main/Script"))()
+
+  	end    
 
 })
 
@@ -298,3 +310,49 @@ Tab:AddButton({
   	end
 })
 Tab:AddLabel("脚本自动有bug")
+
+local Tab = Window:MakeTab({
+
+    Name = "DOORS",
+
+    Icon = "rbxassetid://4483345998",
+
+    PremiumOnly = false
+
+})
+
+Tab:AddButton({
+
+	Name = "DX",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/DXuwu/test-lol/main/YO.lua"))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "①脚本",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/730854e5b6499ee91deb1080e8e12ae3.lua"))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "②脚本",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/kodbolx/kodbolhub/refs/heads/main/KodbolHub%20%3A%20Doors"))()
+
+  	end    
+
+})
