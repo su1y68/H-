@@ -323,7 +323,19 @@ local Tab = Window:MakeTab({
 
 Tab:AddButton({
 
-	Name = "DX",
+	Name = "bobHub汉化",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "DX脚本",
 
 	Callback = function()
 
@@ -351,7 +363,122 @@ Tab:AddButton({
 
 	Callback = function()
 
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/kodbolx/kodbolhub/refs/heads/main/KodbolHub%20%3A%20Doors"))()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "③脚本",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/zuohongjian/bjb/main/ZS%20III"))()
+
+  	end    
+
+})
+Tab:AddButton({
+	Name = "③点击复制卡密",
+	Callback = function()
+     setclipboard("nrty")
+  	end
+})
+
+Tab:AddButton({
+
+	Name = "④脚本",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://github.com/DocYogurt/Main/raw/main/Scripts/DF2RW.lua"))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "⑤脚本",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/EntitySpawner/main/doors(orionlib).lua"))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "⑥脚本",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "⑦脚本",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/VaniaPerets/FolderGui-FolderHub/main/loader.lua", true))()
+
+  	end    
+
+})
+Tab:AddLabel("这些脚本可能通用foor2 rooms")
+
+local Section = Tab:AddSection({
+
+	Name = "Foor2 rooms"
+
+})
+
+Tab:AddButton({
+
+	Name = "①脚本",
+
+	Callback = function()
+
+     loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+
+  	end    
+
+})
+
+Tab:AddButton({
+
+	Name = "微山",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/Script/main/doors/WeiShan_Loader.lua"))()
+
+  	end    
+
+})
+
+local Section = Tab:AddSection({
+
+	Name = "变身脚本"
+
+})
+
+Tab:AddButton({
+
+	Name = "①变身",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
 
   	end    
 
